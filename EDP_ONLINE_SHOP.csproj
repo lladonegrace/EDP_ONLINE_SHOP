@@ -149,6 +149,12 @@
     <Compile Include="Latestorder.Designer.cs">
       <DependentUpon>Latestorder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logincs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logincs.Designer.cs">
+      <DependentUpon>Logincs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Monthlysales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Latestorder.resx">
       <DependentUpon>Latestorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logincs.resx">
+      <DependentUpon>Logincs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Monthlysales.resx">
       <DependentUpon>Monthlysales.cs</DependentUpon>
@@ -285,6 +294,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Oldroll cute camera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Apr 14, 2025, 07_05_33 PM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8488928.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

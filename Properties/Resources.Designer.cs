@@ -73,6 +73,16 @@ namespace EDP_ONLINE_SHOP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8488928 {
+            get {
+                object obj = ResourceManager.GetObject("8488928", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ada7ea6eb61979926f641471826d43b0_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("ada7ea6eb61979926f641471826d43b0-removebg-preview", resourceCulture);
@@ -136,6 +146,16 @@ namespace EDP_ONLINE_SHOP.Properties {
         internal static System.Drawing.Bitmap ChatGPT_Image_Apr_14__2025__07_05_33_PM {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT Image Apr 14, 2025, 07_05_33 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ChatGPT_Image_Apr_14__2025__07_05_33_PM1 {
+            get {
+                object obj = ResourceManager.GetObject("ChatGPT Image Apr 14, 2025, 07_05_33 PM1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

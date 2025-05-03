@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.customerinfotable = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.customerinfotable = new System.Windows.Forms.DataGridView();
             this.backbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerinfotable)).BeginInit();
@@ -45,14 +45,6 @@
             this.panel1.Size = new System.Drawing.Size(462, 230);
             this.panel1.TabIndex = 0;
             // 
-            // customerinfotable
-            // 
-            this.customerinfotable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.customerinfotable.Location = new System.Drawing.Point(68, 131);
-            this.customerinfotable.Name = "customerinfotable";
-            this.customerinfotable.Size = new System.Drawing.Size(319, 207);
-            this.customerinfotable.TabIndex = 1;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -65,6 +57,14 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Customer Information";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // customerinfotable
+            // 
+            this.customerinfotable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customerinfotable.Location = new System.Drawing.Point(68, 131);
+            this.customerinfotable.Name = "customerinfotable";
+            this.customerinfotable.Size = new System.Drawing.Size(319, 207);
+            this.customerinfotable.TabIndex = 1;
             // 
             // backbtn
             // 
@@ -89,7 +89,10 @@
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.customerinfotable);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Customerinfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customerinfo";
             this.Load += new System.EventHandler(this.Customerinfo_Load);
             this.panel1.ResumeLayout(false);

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.latestordertable = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.latestordertable = new System.Windows.Forms.DataGridView();
             this.backbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.latestordertable)).BeginInit();
@@ -45,14 +45,6 @@
             this.panel1.Size = new System.Drawing.Size(486, 172);
             this.panel1.TabIndex = 0;
             // 
-            // latestordertable
-            // 
-            this.latestordertable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.latestordertable.Location = new System.Drawing.Point(95, 109);
-            this.latestordertable.Name = "latestordertable";
-            this.latestordertable.Size = new System.Drawing.Size(288, 150);
-            this.latestordertable.TabIndex = 1;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -65,6 +57,14 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Latest Order";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // latestordertable
+            // 
+            this.latestordertable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.latestordertable.Location = new System.Drawing.Point(95, 109);
+            this.latestordertable.Name = "latestordertable";
+            this.latestordertable.Size = new System.Drawing.Size(288, 150);
+            this.latestordertable.TabIndex = 1;
             // 
             // backbtn
             // 
@@ -89,7 +89,10 @@
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.latestordertable);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Latestorder";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Latestorder";
             this.Load += new System.EventHandler(this.Latestorder_Load);
             this.panel1.ResumeLayout(false);

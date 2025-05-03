@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.customerspendtable = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.customerspendtable = new System.Windows.Forms.DataGridView();
             this.backbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerspendtable)).BeginInit();
@@ -45,14 +45,6 @@
             this.panel1.Size = new System.Drawing.Size(596, 182);
             this.panel1.TabIndex = 0;
             // 
-            // customerspendtable
-            // 
-            this.customerspendtable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.customerspendtable.Location = new System.Drawing.Point(75, 115);
-            this.customerspendtable.Name = "customerspendtable";
-            this.customerspendtable.Size = new System.Drawing.Size(343, 183);
-            this.customerspendtable.TabIndex = 1;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -65,6 +57,14 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Customer Spending";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // customerspendtable
+            // 
+            this.customerspendtable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customerspendtable.Location = new System.Drawing.Point(75, 115);
+            this.customerspendtable.Name = "customerspendtable";
+            this.customerspendtable.Size = new System.Drawing.Size(343, 183);
+            this.customerspendtable.TabIndex = 1;
             // 
             // backbtn
             // 
@@ -89,7 +89,10 @@
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.customerspendtable);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Customerspend";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customerspend";
             this.Load += new System.EventHandler(this.Customerspend_Load);
             this.panel1.ResumeLayout(false);

@@ -90,7 +90,10 @@
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.orderinfotable);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Orderinfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Orderinfo";
             this.Load += new System.EventHandler(this.Orderinfo_Load);
             this.panel1.ResumeLayout(false);

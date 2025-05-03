@@ -43,12 +43,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.customertabledataview = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.inventorybtn = new System.Windows.Forms.Button();
             this.orderitemsbtn = new System.Windows.Forms.Button();
             this.productsbtn = new System.Windows.Forms.Button();
             this.customerbtn = new System.Windows.Forms.Button();
             this.dashboardbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.inventorybtn = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.customertabledataview)).BeginInit();
             this.panel1.SuspendLayout();
@@ -243,6 +243,21 @@
             this.panel1.Size = new System.Drawing.Size(206, 669);
             this.panel1.TabIndex = 26;
             // 
+            // inventorybtn
+            // 
+            this.inventorybtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.inventorybtn.FlatAppearance.BorderSize = 0;
+            this.inventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.inventorybtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.inventorybtn.Location = new System.Drawing.Point(0, 442);
+            this.inventorybtn.Name = "inventorybtn";
+            this.inventorybtn.Size = new System.Drawing.Size(206, 45);
+            this.inventorybtn.TabIndex = 7;
+            this.inventorybtn.Text = "Inventory";
+            this.inventorybtn.UseVisualStyleBackColor = false;
+            this.inventorybtn.Click += new System.EventHandler(this.inventorybtn_Click);
+            // 
             // orderitemsbtn
             // 
             this.orderitemsbtn.BackColor = System.Drawing.Color.PaleVioletRed;
@@ -314,21 +329,6 @@
             this.label1.Text = "Admin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // inventorybtn
-            // 
-            this.inventorybtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.inventorybtn.FlatAppearance.BorderSize = 0;
-            this.inventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.inventorybtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.inventorybtn.Location = new System.Drawing.Point(0, 442);
-            this.inventorybtn.Name = "inventorybtn";
-            this.inventorybtn.Size = new System.Drawing.Size(206, 45);
-            this.inventorybtn.TabIndex = 7;
-            this.inventorybtn.Text = "Inventory";
-            this.inventorybtn.UseVisualStyleBackColor = false;
-            this.inventorybtn.Click += new System.EventHandler(this.inventorybtn_Click);
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
@@ -360,7 +360,10 @@
             this.Controls.Add(this.inputemail);
             this.Controls.Add(this.inputcustid);
             this.Controls.Add(this.label2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.customertabledataview)).EndInit();

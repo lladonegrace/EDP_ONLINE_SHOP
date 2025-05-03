@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.monthlysalesview = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.monthlysalesview = new System.Windows.Forms.DataGridView();
             this.backbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.monthlysalesview)).BeginInit();
@@ -45,14 +45,6 @@
             this.panel1.Size = new System.Drawing.Size(585, 155);
             this.panel1.TabIndex = 2;
             // 
-            // monthlysalesview
-            // 
-            this.monthlysalesview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.monthlysalesview.Location = new System.Drawing.Point(67, 100);
-            this.monthlysalesview.Name = "monthlysalesview";
-            this.monthlysalesview.Size = new System.Drawing.Size(328, 150);
-            this.monthlysalesview.TabIndex = 3;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -65,6 +57,14 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Monthly Sales";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // monthlysalesview
+            // 
+            this.monthlysalesview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.monthlysalesview.Location = new System.Drawing.Point(67, 100);
+            this.monthlysalesview.Name = "monthlysalesview";
+            this.monthlysalesview.Size = new System.Drawing.Size(328, 150);
+            this.monthlysalesview.TabIndex = 3;
             // 
             // backbtn
             // 
@@ -89,7 +89,10 @@
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.monthlysalesview);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Monthlysales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Monthlysales";
             this.Load += new System.EventHandler(this.Monthlysales_Load);
             this.panel1.ResumeLayout(false);

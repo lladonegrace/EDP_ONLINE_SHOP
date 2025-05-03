@@ -39,6 +39,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.dashboardbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,11 +51,13 @@
             this.categorytable = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.inventorybtn = new System.Windows.Forms.Button();
             this.orderitemsbtn = new System.Windows.Forms.Button();
             this.productsbtn = new System.Windows.Forms.Button();
             this.customerbtn = new System.Windows.Forms.Button();
             this.dashbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -62,9 +65,6 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.inventorybtn = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.producttable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categorytable)).BeginInit();
@@ -228,6 +228,16 @@
             this.label1.Text = "Admin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -356,6 +366,21 @@
             this.panel2.Size = new System.Drawing.Size(206, 669);
             this.panel2.TabIndex = 34;
             // 
+            // inventorybtn
+            // 
+            this.inventorybtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.inventorybtn.FlatAppearance.BorderSize = 0;
+            this.inventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.inventorybtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.inventorybtn.Location = new System.Drawing.Point(0, 442);
+            this.inventorybtn.Name = "inventorybtn";
+            this.inventorybtn.Size = new System.Drawing.Size(206, 45);
+            this.inventorybtn.TabIndex = 43;
+            this.inventorybtn.Text = "Inventory";
+            this.inventorybtn.UseVisualStyleBackColor = false;
+            this.inventorybtn.Click += new System.EventHandler(this.inventorybtn_Click);
+            // 
             // orderitemsbtn
             // 
             this.orderitemsbtn.BackColor = System.Drawing.Color.PaleVioletRed;
@@ -427,6 +452,16 @@
             this.label2.Text = "Admin";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel2.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
+            this.flowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(178, 168);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(347, 99);
@@ -495,41 +530,6 @@
             this.button12.Text = "Clear";
             this.button12.UseVisualStyleBackColor = false;
             // 
-            // inventorybtn
-            // 
-            this.inventorybtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.inventorybtn.FlatAppearance.BorderSize = 0;
-            this.inventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.inventorybtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.inventorybtn.Location = new System.Drawing.Point(0, 442);
-            this.inventorybtn.Name = "inventorybtn";
-            this.inventorybtn.Size = new System.Drawing.Size(206, 45);
-            this.inventorybtn.TabIndex = 43;
-            this.inventorybtn.Text = "Inventory";
-            this.inventorybtn.UseVisualStyleBackColor = false;
-            this.inventorybtn.Click += new System.EventHandler(this.inventorybtn_Click);
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel2.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
-            this.flowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(178, 168);
-            this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -555,7 +555,10 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);

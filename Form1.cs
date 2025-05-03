@@ -138,5 +138,12 @@ namespace EDP_ONLINE_SHOP
             customerspend.Show();
             this.Hide();
         }
+
+        private void logoutbtn_Click(object sender, EventArgs e)
+        {
+            Logincs login = new Logincs();
+            login.Show();
+            this.Hide();
+        }
     }
 }

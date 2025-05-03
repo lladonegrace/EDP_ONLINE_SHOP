@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.inventorybtn = new System.Windows.Forms.Button();
             this.orderitemsbtn = new System.Windows.Forms.Button();
             this.productsbtn = new System.Windows.Forms.Button();
             this.customerbtn = new System.Windows.Forms.Button();
             this.dashboardbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.orderitemtable = new System.Windows.Forms.Label();
             this.orderitemview = new System.Windows.Forms.DataGridView();
             this.labelorder = new System.Windows.Forms.Label();
             this.ordertable = new System.Windows.Forms.DataGridView();
-            this.inventorybtn = new System.Windows.Forms.Button();
             this.paymenttable = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderitemview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordertable)).BeginInit();
@@ -62,6 +62,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(206, 669);
             this.panel1.TabIndex = 1;
+            // 
+            // inventorybtn
+            // 
+            this.inventorybtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.inventorybtn.FlatAppearance.BorderSize = 0;
+            this.inventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.inventorybtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.inventorybtn.Location = new System.Drawing.Point(0, 442);
+            this.inventorybtn.Name = "inventorybtn";
+            this.inventorybtn.Size = new System.Drawing.Size(206, 45);
+            this.inventorybtn.TabIndex = 15;
+            this.inventorybtn.Text = "Inventory";
+            this.inventorybtn.UseVisualStyleBackColor = false;
+            this.inventorybtn.Click += new System.EventHandler(this.inventorybtn_Click);
             // 
             // orderitemsbtn
             // 
@@ -134,6 +149,16 @@
             this.label1.Text = "Admin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
             // orderitemtable
             // 
             this.orderitemtable.AutoSize = true;
@@ -174,21 +199,6 @@
             this.ordertable.Size = new System.Drawing.Size(564, 131);
             this.ordertable.TabIndex = 14;
             // 
-            // inventorybtn
-            // 
-            this.inventorybtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.inventorybtn.FlatAppearance.BorderSize = 0;
-            this.inventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.inventorybtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inventorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.inventorybtn.Location = new System.Drawing.Point(0, 442);
-            this.inventorybtn.Name = "inventorybtn";
-            this.inventorybtn.Size = new System.Drawing.Size(206, 45);
-            this.inventorybtn.TabIndex = 15;
-            this.inventorybtn.Text = "Inventory";
-            this.inventorybtn.UseVisualStyleBackColor = false;
-            this.inventorybtn.Click += new System.EventHandler(this.inventorybtn_Click);
-            // 
             // paymenttable
             // 
             this.paymenttable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -209,16 +219,6 @@
             this.label2.Text = "Paymets";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,7 +231,10 @@
             this.Controls.Add(this.orderitemview);
             this.Controls.Add(this.orderitemtable);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
             this.panel1.ResumeLayout(false);
