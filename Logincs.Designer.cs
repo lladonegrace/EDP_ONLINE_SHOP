@@ -44,11 +44,12 @@
             this.usernamebox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.usernamebox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernamebox.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernamebox.Location = new System.Drawing.Point(221, 170);
             this.usernamebox.Name = "usernamebox";
-            this.usernamebox.Size = new System.Drawing.Size(326, 38);
+            this.usernamebox.Size = new System.Drawing.Size(326, 37);
             this.usernamebox.TabIndex = 1;
+            this.usernamebox.TextChanged += new System.EventHandler(this.usernamebox_TextChanged);
             // 
             // usernamelabel
             // 
@@ -89,6 +90,7 @@
             this.passwordbox.PasswordChar = '*';
             this.passwordbox.Size = new System.Drawing.Size(326, 38);
             this.passwordbox.TabIndex = 4;
+            this.passwordbox.TextChanged += new System.EventHandler(this.passwordbox_TextChanged);
             // 
             // loginbtn
             // 
@@ -133,6 +135,7 @@
             this.forgotlink.Size = new System.Drawing.Size(115, 17);
             this.forgotlink.TabIndex = 7;
             this.forgotlink.Text = "Forgot Password?";
+            this.forgotlink.Click += new System.EventHandler(this.forgotlink_Click);
             // 
             // checkBox1
             // 
@@ -148,6 +151,7 @@
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // labelshop
             // 
@@ -180,6 +184,7 @@
             this.Name = "Logincs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logincs";
+            this.Load += new System.EventHandler(this.Logincs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

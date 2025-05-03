@@ -113,6 +113,12 @@
     <Compile Include="Customerspend.Designer.cs">
       <DependentUpon>Customerspend.cs</DependentUpon>
     </Compile>
+    <Compile Include="forgotpasswordform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpasswordform.Designer.cs">
+      <DependentUpon>forgotpasswordform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,7 @@
     <Compile Include="Logincs.Designer.cs">
       <DependentUpon>Logincs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Microsoft\VisualBasic\Interaction.cs" />
     <Compile Include="Monthlysales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customerspend.resx">
       <DependentUpon>Customerspend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpasswordform.resx">
+      <DependentUpon>forgotpasswordform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -300,6 +310,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\8488928.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbcd4a599d16deaa8d99d5afe4743940-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -357,6 +357,7 @@
             this.logoutbtn.TabStop = false;
             this.logoutbtn.Text = "Logout";
             this.logoutbtn.UseVisualStyleBackColor = false;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
             // Form2
             // 

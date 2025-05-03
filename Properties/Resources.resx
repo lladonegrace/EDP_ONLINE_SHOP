@@ -196,6 +196,9 @@
   <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="generatedtext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\generatedtext.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="soft-candy-pink-color-iphone-6l3rr6c41q5b6wi3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\soft-candy-pink-color-iphone-6l3rr6c41q5b6wi3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,13 +214,13 @@
   <data name="solid-navy-blue-08es61rc222p02b0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\solid-navy-blue-08es61rc222p02b0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="8488928" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8488928.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Itens Magalu com descontos imperdíveis !1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Itens Magalu com descontos imperdíveis !1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="generatedtext" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\generatedtext.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8488928" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8488928.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dbcd4a599d16deaa8d99d5afe4743940-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dbcd4a599d16deaa8d99d5afe4743940-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
