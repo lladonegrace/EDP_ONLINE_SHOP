@@ -50,6 +50,7 @@
             this.dashboardbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.logoutbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.customertabledataview)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -231,6 +232,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.panel1.Controls.Add(this.logoutbtn);
             this.panel1.Controls.Add(this.inventorybtn);
             this.panel1.Controls.Add(this.orderitemsbtn);
             this.panel1.Controls.Add(this.productsbtn);
@@ -339,6 +341,23 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
+            // logoutbtn
+            // 
+            this.logoutbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logoutbtn.Location = new System.Drawing.Point(0, 630);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(206, 39);
+            this.logoutbtn.TabIndex = 30;
+            this.logoutbtn.TabStop = false;
+            this.logoutbtn.Text = "Logout";
+            this.logoutbtn.UseVisualStyleBackColor = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,5 +416,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button inventorybtn;
+        private System.Windows.Forms.Button logoutbtn;
     }
 }
