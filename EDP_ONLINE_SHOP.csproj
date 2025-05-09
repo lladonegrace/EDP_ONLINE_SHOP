@@ -359,5 +359,11 @@
   <ItemGroup>
     <None Include="Resources\freepik_br_eec77614-8f3d-4209-9f10-ed8d815e3a29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e81a3de8acf05a5360c9a43b561f5160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%291.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

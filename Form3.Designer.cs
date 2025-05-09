@@ -76,6 +76,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.exportexcelbtn = new System.Windows.Forms.Button();
+            this.productsearch = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.producttable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categorytable)).BeginInit();
@@ -244,11 +246,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.MistyRose;
-            this.label3.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightCoral;
             this.label3.Location = new System.Drawing.Point(41, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 37);
+            this.label3.Size = new System.Drawing.Size(162, 31);
             this.label3.TabIndex = 12;
             this.label3.Text = "Add Products";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -298,6 +300,9 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.MistyRose;
             this.label7.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -331,9 +336,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.producttable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.producttable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.producttable.Location = new System.Drawing.Point(529, 99);
+            this.producttable.Location = new System.Drawing.Point(529, 130);
             this.producttable.Name = "producttable";
-            this.producttable.Size = new System.Drawing.Size(440, 176);
+            this.producttable.Size = new System.Drawing.Size(440, 166);
             this.producttable.TabIndex = 30;
             this.producttable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -341,26 +346,32 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.MistyRose;
-            this.label9.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.LightCoral;
             this.label9.Location = new System.Drawing.Point(312, 25);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(197, 37);
+            this.label9.Size = new System.Drawing.Size(164, 31);
             this.label9.TabIndex = 31;
             this.label9.Text = "Product Table";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // categorytable
             // 
+            this.categorytable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.categorytable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.categorytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categorytable.Location = new System.Drawing.Point(427, 430);
+            this.categorytable.Location = new System.Drawing.Point(415, 430);
             this.categorytable.Name = "categorytable";
-            this.categorytable.Size = new System.Drawing.Size(240, 214);
+            this.categorytable.Size = new System.Drawing.Size(252, 214);
             this.categorytable.TabIndex = 32;
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.LightCoral;
@@ -474,6 +485,9 @@
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(347, 99);
             this.textBox1.MinimumSize = new System.Drawing.Size(150, 30);
@@ -483,6 +497,9 @@
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(347, 140);
             this.textBox2.MinimumSize = new System.Drawing.Size(150, 30);
@@ -492,6 +509,9 @@
             // 
             // textBox3
             // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(347, 230);
             this.textBox3.MinimumSize = new System.Drawing.Size(150, 30);
@@ -501,6 +521,9 @@
             // 
             // textBox4
             // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(347, 271);
             this.textBox4.MinimumSize = new System.Drawing.Size(150, 60);
@@ -510,6 +533,9 @@
             // 
             // textBox6
             // 
+            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(347, 189);
             this.textBox6.MinimumSize = new System.Drawing.Size(150, 30);
@@ -519,12 +545,15 @@
             // 
             // addbtn
             // 
+            this.addbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.addbtn.BackColor = System.Drawing.Color.LimeGreen;
             this.addbtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.addbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.addbtn.Location = new System.Drawing.Point(529, 289);
+            this.addbtn.Location = new System.Drawing.Point(318, 290);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(138, 42);
             this.addbtn.TabIndex = 41;
@@ -533,11 +562,14 @@
             // 
             // updatebtn
             // 
+            this.updatebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.updatebtn.BackColor = System.Drawing.Color.DarkKhaki;
             this.updatebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updatebtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatebtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.updatebtn.Location = new System.Drawing.Point(682, 289);
+            this.updatebtn.Location = new System.Drawing.Point(471, 290);
             this.updatebtn.Name = "updatebtn";
             this.updatebtn.Size = new System.Drawing.Size(143, 42);
             this.updatebtn.TabIndex = 42;
@@ -553,7 +585,7 @@
             this.deletebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deletebtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletebtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deletebtn.Location = new System.Drawing.Point(831, 289);
+            this.deletebtn.Location = new System.Drawing.Point(620, 290);
             this.deletebtn.Name = "deletebtn";
             this.deletebtn.Size = new System.Drawing.Size(138, 42);
             this.deletebtn.TabIndex = 43;
@@ -566,19 +598,27 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.MistyRose;
+            this.panel3.Controls.Add(this.productsearch);
+            this.panel3.Controls.Add(this.exportexcelbtn);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.addbtn);
+            this.panel3.Controls.Add(this.updatebtn);
+            this.panel3.Controls.Add(this.deletebtn);
             this.panel3.Location = new System.Drawing.Point(211, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(770, 353);
+            this.panel3.Size = new System.Drawing.Size(770, 360);
             this.panel3.TabIndex = 44;
             // 
             // textBox5
             // 
+            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(796, 461);
             this.textBox5.MinimumSize = new System.Drawing.Size(150, 30);
@@ -588,6 +628,9 @@
             // 
             // textBox7
             // 
+            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(796, 510);
             this.textBox7.MinimumSize = new System.Drawing.Size(150, 30);
@@ -597,6 +640,9 @@
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.LightCoral;
@@ -609,6 +655,9 @@
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label12.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -623,6 +672,9 @@
             // 
             // label13
             // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label13.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -637,6 +689,9 @@
             // 
             // addcategorybtn
             // 
+            this.addcategorybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.addcategorybtn.BackColor = System.Drawing.Color.LimeGreen;
             this.addcategorybtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.addcategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -651,6 +706,9 @@
             // 
             // updatecategorybtn
             // 
+            this.updatecategorybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.updatecategorybtn.BackColor = System.Drawing.Color.DarkKhaki;
             this.updatecategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updatecategorybtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -664,6 +722,9 @@
             // 
             // deletecategorybtn
             // 
+            this.deletecategorybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.deletecategorybtn.BackColor = System.Drawing.Color.IndianRed;
             this.deletecategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deletecategorybtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -677,11 +738,14 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.Screenshot_2025_05_09_230752;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Location = new System.Drawing.Point(230, 430);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(199, 214);
+            this.panel4.Size = new System.Drawing.Size(186, 214);
             this.panel4.TabIndex = 53;
             // 
             // flowLayoutPanel2
@@ -704,6 +768,38 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
+            // exportexcelbtn
+            // 
+            this.exportexcelbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.exportexcelbtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.exportexcelbtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.exportexcelbtn.FlatAppearance.BorderSize = 2;
+            this.exportexcelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exportexcelbtn.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportexcelbtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.exportexcelbtn.Location = new System.Drawing.Point(617, 85);
+            this.exportexcelbtn.Name = "exportexcelbtn";
+            this.exportexcelbtn.Size = new System.Drawing.Size(141, 27);
+            this.exportexcelbtn.TabIndex = 58;
+            this.exportexcelbtn.Text = "Export to MS Excel";
+            this.exportexcelbtn.UseVisualStyleBackColor = false;
+            // 
+            // productsearch
+            // 
+            this.productsearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.productsearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.productsearch.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productsearch.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.productsearch.Location = new System.Drawing.Point(318, 87);
+            this.productsearch.Name = "productsearch";
+            this.productsearch.Size = new System.Drawing.Size(203, 25);
+            this.productsearch.TabIndex = 54;
+            this.productsearch.Text = "  Search";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -720,9 +816,6 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.deletebtn);
-            this.Controls.Add(this.updatebtn);
-            this.Controls.Add(this.addbtn);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -803,5 +896,7 @@
         private System.Windows.Forms.Button updatecategorybtn;
         private System.Windows.Forms.Button deletecategorybtn;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button exportexcelbtn;
+        private System.Windows.Forms.TextBox productsearch;
     }
 }
