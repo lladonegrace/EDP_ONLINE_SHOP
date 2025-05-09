@@ -227,5 +227,12 @@ namespace EDP_ONLINE_SHOP
                 MessageBox.Show("Registration failed. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void alreadyhaveaccbtn_Click(object sender, EventArgs e)
+        {
+            Logincs login = new Logincs();
+            login.Show();
+            this.Hide();
+        }
     }
 }

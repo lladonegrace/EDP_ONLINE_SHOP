@@ -39,7 +39,6 @@ namespace EDP_ONLINE_SHOP
                 orderitemview.DataSource = dt1;
                 reader1.Close();
 
-                // Load another table, e.g., previous_order_2024
                 string query2 = "SELECT * FROM orders";
                 MySqlCommand cmd2 = new MySqlCommand(query2, con);
                 MySqlDataReader reader2 = cmd2.ExecuteReader();
@@ -87,6 +86,11 @@ namespace EDP_ONLINE_SHOP
         }
 
         private void orderitemview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

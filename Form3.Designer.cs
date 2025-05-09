@@ -353,9 +353,9 @@
             // 
             this.categorytable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.categorytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categorytable.Location = new System.Drawing.Point(435, 430);
+            this.categorytable.Location = new System.Drawing.Point(427, 430);
             this.categorytable.Name = "categorytable";
-            this.categorytable.Size = new System.Drawing.Size(211, 214);
+            this.categorytable.Size = new System.Drawing.Size(240, 214);
             this.categorytable.TabIndex = 32;
             // 
             // label10
@@ -477,7 +477,7 @@
             this.textBox1.Location = new System.Drawing.Point(347, 99);
             this.textBox1.MinimumSize = new System.Drawing.Size(150, 30);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 30);
+            this.textBox1.Size = new System.Drawing.Size(150, 26);
             this.textBox1.TabIndex = 35;
             // 
             // textBox2
@@ -486,7 +486,7 @@
             this.textBox2.Location = new System.Drawing.Point(347, 140);
             this.textBox2.MinimumSize = new System.Drawing.Size(150, 30);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 30);
+            this.textBox2.Size = new System.Drawing.Size(150, 26);
             this.textBox2.TabIndex = 36;
             // 
             // textBox3
@@ -495,7 +495,7 @@
             this.textBox3.Location = new System.Drawing.Point(347, 230);
             this.textBox3.MinimumSize = new System.Drawing.Size(150, 30);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 30);
+            this.textBox3.Size = new System.Drawing.Size(150, 26);
             this.textBox3.TabIndex = 37;
             // 
             // textBox4
@@ -504,7 +504,7 @@
             this.textBox4.Location = new System.Drawing.Point(347, 271);
             this.textBox4.MinimumSize = new System.Drawing.Size(150, 60);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 60);
+            this.textBox4.Size = new System.Drawing.Size(150, 26);
             this.textBox4.TabIndex = 38;
             // 
             // textBox6
@@ -513,7 +513,7 @@
             this.textBox6.Location = new System.Drawing.Point(347, 189);
             this.textBox6.MinimumSize = new System.Drawing.Size(150, 30);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(150, 30);
+            this.textBox6.Size = new System.Drawing.Size(150, 26);
             this.textBox6.TabIndex = 40;
             // 
             // addbtn
@@ -545,6 +545,9 @@
             // 
             // deletebtn
             // 
+            this.deletebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.deletebtn.BackColor = System.Drawing.Color.IndianRed;
             this.deletebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deletebtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -558,6 +561,9 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.MistyRose;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label9);
@@ -572,7 +578,7 @@
             this.textBox5.Location = new System.Drawing.Point(796, 461);
             this.textBox5.MinimumSize = new System.Drawing.Size(150, 30);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 30);
+            this.textBox5.Size = new System.Drawing.Size(150, 26);
             this.textBox5.TabIndex = 45;
             // 
             // textBox7
@@ -581,7 +587,7 @@
             this.textBox7.Location = new System.Drawing.Point(796, 510);
             this.textBox7.MinimumSize = new System.Drawing.Size(150, 30);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 30);
+            this.textBox7.Size = new System.Drawing.Size(150, 26);
             this.textBox7.TabIndex = 46;
             // 
             // label11
@@ -589,7 +595,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.LightCoral;
-            this.label11.Location = new System.Drawing.Point(689, 395);
+            this.label11.Location = new System.Drawing.Point(740, 395);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(166, 32);
             this.label11.TabIndex = 47;
@@ -670,7 +676,7 @@
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Location = new System.Drawing.Point(230, 430);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(206, 214);
+            this.panel4.Size = new System.Drawing.Size(199, 214);
             this.panel4.TabIndex = 53;
             // 
             // flowLayoutPanel2

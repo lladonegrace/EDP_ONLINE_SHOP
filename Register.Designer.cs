@@ -51,6 +51,7 @@
             this.alreadyhaveaccbtn.Size = new System.Drawing.Size(152, 13);
             this.alreadyhaveaccbtn.TabIndex = 20;
             this.alreadyhaveaccbtn.Text = "Already Have an Account";
+            this.alreadyhaveaccbtn.Click += new System.EventHandler(this.alreadyhaveaccbtn_Click);
             // 
             // labelshop
             // 
