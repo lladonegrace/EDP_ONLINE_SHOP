@@ -35,46 +35,49 @@
             this.customerbtn = new System.Windows.Forms.Button();
             this.dashboardbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.orderitemtable = new System.Windows.Forms.Label();
             this.orderitemview = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ordertable = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.customeridinput = new System.Windows.Forms.TextBox();
-            this.orderidinput = new System.Windows.Forms.TextBox();
-            this.orderstatusinput = new System.Windows.Forms.TextBox();
-            this.updateorderbtn = new System.Windows.Forms.Button();
-            this.deleteorderbtn = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.paymenttable = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.paymentidinput = new System.Windows.Forms.TextBox();
-            this.paymentstatusinput = new System.Windows.Forms.TextBox();
-            this.updatepaymentbtn = new System.Windows.Forms.Button();
-            this.deletepaymentbtn = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.deleteorderbtn = new System.Windows.Forms.Button();
+            this.updateorderbtn = new System.Windows.Forms.Button();
+            this.orderstatusinput = new System.Windows.Forms.TextBox();
+            this.orderidinput = new System.Windows.Forms.TextBox();
+            this.customeridinput = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ordertable = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.deletepaymentbtn = new System.Windows.Forms.Button();
+            this.updatepaymentbtn = new System.Windows.Forms.Button();
+            this.paymentstatusinput = new System.Windows.Forms.TextBox();
+            this.paymentidinput = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.paymenttable = new System.Windows.Forms.DataGridView();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderitemview)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ordertable)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.paymenttable)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.PaleVioletRed;
             this.panel1.Controls.Add(this.inventorybtn);
             this.panel1.Controls.Add(this.orderitemsbtn);
@@ -174,8 +177,21 @@
             this.label1.Text = "Admin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
             // orderitemtable
             // 
+            this.orderitemtable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.orderitemtable.AutoSize = true;
             this.orderitemtable.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderitemtable.ForeColor = System.Drawing.Color.LightCoral;
@@ -188,15 +204,21 @@
             // 
             // orderitemview
             // 
+            this.orderitemview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.orderitemview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.orderitemview.Location = new System.Drawing.Point(120, 303);
+            this.orderitemview.Location = new System.Drawing.Point(97, 306);
             this.orderitemview.Name = "orderitemview";
-            this.orderitemview.Size = new System.Drawing.Size(522, 266);
+            this.orderitemview.Size = new System.Drawing.Size(564, 266);
             this.orderitemview.TabIndex = 12;
             this.orderitemview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.orderitemview_CellContentClick);
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -219,6 +241,18 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Order_items_Table";
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources._294bba2466aff48c4c5c7742e243cd3a;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(29, 22);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(694, 203);
+            this.panel2.TabIndex = 13;
+            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.MistyRose;
@@ -240,6 +274,155 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Order";
             // 
+            // deleteorderbtn
+            // 
+            this.deleteorderbtn.AccessibleRole = System.Windows.Forms.AccessibleRole.SplitButton;
+            this.deleteorderbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.deleteorderbtn.BackColor = System.Drawing.Color.IndianRed;
+            this.deleteorderbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteorderbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteorderbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.deleteorderbtn.Location = new System.Drawing.Point(456, 166);
+            this.deleteorderbtn.Name = "deleteorderbtn";
+            this.deleteorderbtn.Size = new System.Drawing.Size(175, 44);
+            this.deleteorderbtn.TabIndex = 10;
+            this.deleteorderbtn.Text = "Delete";
+            this.deleteorderbtn.UseVisualStyleBackColor = false;
+            // 
+            // updateorderbtn
+            // 
+            this.updateorderbtn.AccessibleRole = System.Windows.Forms.AccessibleRole.SplitButton;
+            this.updateorderbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.updateorderbtn.BackColor = System.Drawing.Color.DarkKhaki;
+            this.updateorderbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updateorderbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateorderbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.updateorderbtn.Location = new System.Drawing.Point(456, 99);
+            this.updateorderbtn.Name = "updateorderbtn";
+            this.updateorderbtn.Size = new System.Drawing.Size(175, 44);
+            this.updateorderbtn.TabIndex = 9;
+            this.updateorderbtn.Text = "Update";
+            this.updateorderbtn.UseVisualStyleBackColor = false;
+            // 
+            // orderstatusinput
+            // 
+            this.orderstatusinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.orderstatusinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderstatusinput.Location = new System.Drawing.Point(234, 185);
+            this.orderstatusinput.Name = "orderstatusinput";
+            this.orderstatusinput.Size = new System.Drawing.Size(170, 25);
+            this.orderstatusinput.TabIndex = 8;
+            // 
+            // orderidinput
+            // 
+            this.orderidinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.orderidinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderidinput.Location = new System.Drawing.Point(234, 141);
+            this.orderidinput.Name = "orderidinput";
+            this.orderidinput.Size = new System.Drawing.Size(170, 25);
+            this.orderidinput.TabIndex = 7;
+            // 
+            // customeridinput
+            // 
+            this.customeridinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.customeridinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customeridinput.Location = new System.Drawing.Point(234, 99);
+            this.customeridinput.Name = "customeridinput";
+            this.customeridinput.Size = new System.Drawing.Size(170, 25);
+            this.customeridinput.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Salmon;
+            this.label6.Location = new System.Drawing.Point(152, 144);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 19);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Order Id";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Salmon;
+            this.label5.Location = new System.Drawing.Point(125, 185);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(92, 19);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Order Status";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Salmon;
+            this.label4.Location = new System.Drawing.Point(127, 99);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 19);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Customer Id";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Salmon;
+            this.label3.Location = new System.Drawing.Point(273, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(205, 37);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Update Order ";
+            // 
+            // ordertable
+            // 
+            this.ordertable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ordertable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ordertable.Location = new System.Drawing.Point(100, 321);
+            this.ordertable.Name = "ordertable";
+            this.ordertable.Size = new System.Drawing.Size(564, 266);
+            this.ordertable.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Salmon;
+            this.label2.Location = new System.Drawing.Point(290, 263);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 37);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Order Table";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.LavenderBlush;
@@ -258,205 +441,11 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Payment";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Salmon;
-            this.label2.Location = new System.Drawing.Point(290, 263);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 37);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Order Table";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // ordertable
-            // 
-            this.ordertable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ordertable.Location = new System.Drawing.Point(73, 319);
-            this.ordertable.Name = "ordertable";
-            this.ordertable.Size = new System.Drawing.Size(627, 259);
-            this.ordertable.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Salmon;
-            this.label3.Location = new System.Drawing.Point(273, 32);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(205, 37);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Update Order ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Salmon;
-            this.label4.Location = new System.Drawing.Point(127, 99);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 19);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Customer Id";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Salmon;
-            this.label5.Location = new System.Drawing.Point(125, 185);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 19);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Order Status";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Salmon;
-            this.label6.Location = new System.Drawing.Point(152, 144);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 19);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Order Id";
-            // 
-            // customeridinput
-            // 
-            this.customeridinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customeridinput.Location = new System.Drawing.Point(234, 99);
-            this.customeridinput.Name = "customeridinput";
-            this.customeridinput.Size = new System.Drawing.Size(170, 25);
-            this.customeridinput.TabIndex = 6;
-            // 
-            // orderidinput
-            // 
-            this.orderidinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orderidinput.Location = new System.Drawing.Point(234, 141);
-            this.orderidinput.Name = "orderidinput";
-            this.orderidinput.Size = new System.Drawing.Size(170, 25);
-            this.orderidinput.TabIndex = 7;
-            // 
-            // orderstatusinput
-            // 
-            this.orderstatusinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orderstatusinput.Location = new System.Drawing.Point(234, 185);
-            this.orderstatusinput.Name = "orderstatusinput";
-            this.orderstatusinput.Size = new System.Drawing.Size(170, 25);
-            this.orderstatusinput.TabIndex = 8;
-            // 
-            // updateorderbtn
-            // 
-            this.updateorderbtn.AccessibleRole = System.Windows.Forms.AccessibleRole.SplitButton;
-            this.updateorderbtn.BackColor = System.Drawing.Color.DarkKhaki;
-            this.updateorderbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updateorderbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateorderbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.updateorderbtn.Location = new System.Drawing.Point(456, 99);
-            this.updateorderbtn.Name = "updateorderbtn";
-            this.updateorderbtn.Size = new System.Drawing.Size(175, 44);
-            this.updateorderbtn.TabIndex = 9;
-            this.updateorderbtn.Text = "Update";
-            this.updateorderbtn.UseVisualStyleBackColor = false;
-            // 
-            // deleteorderbtn
-            // 
-            this.deleteorderbtn.AccessibleRole = System.Windows.Forms.AccessibleRole.SplitButton;
-            this.deleteorderbtn.BackColor = System.Drawing.Color.IndianRed;
-            this.deleteorderbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteorderbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteorderbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deleteorderbtn.Location = new System.Drawing.Point(456, 166);
-            this.deleteorderbtn.Name = "deleteorderbtn";
-            this.deleteorderbtn.Size = new System.Drawing.Size(175, 44);
-            this.deleteorderbtn.TabIndex = 10;
-            this.deleteorderbtn.Text = "Delete";
-            this.deleteorderbtn.UseVisualStyleBackColor = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Salmon;
-            this.label7.Location = new System.Drawing.Point(262, 285);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(214, 37);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Payment Table";
-            // 
-            // paymenttable
-            // 
-            this.paymenttable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.paymenttable.Location = new System.Drawing.Point(56, 344);
-            this.paymenttable.Name = "paymenttable";
-            this.paymenttable.Size = new System.Drawing.Size(644, 243);
-            this.paymenttable.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Salmon;
-            this.label8.Location = new System.Drawing.Point(253, 38);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(236, 37);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Update Payment";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Salmon;
-            this.label9.Location = new System.Drawing.Point(80, 126);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 19);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Payment Id";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Salmon;
-            this.label10.Location = new System.Drawing.Point(359, 127);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 19);
-            this.label10.TabIndex = 4;
-            this.label10.Text = " Payment Status";
-            // 
-            // paymentidinput
-            // 
-            this.paymentidinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paymentidinput.Location = new System.Drawing.Point(172, 123);
-            this.paymentidinput.Name = "paymentidinput";
-            this.paymentidinput.Size = new System.Drawing.Size(162, 25);
-            this.paymentidinput.TabIndex = 5;
-            // 
-            // paymentstatusinput
-            // 
-            this.paymentstatusinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paymentstatusinput.Location = new System.Drawing.Point(495, 123);
-            this.paymentstatusinput.Name = "paymentstatusinput";
-            this.paymentstatusinput.Size = new System.Drawing.Size(162, 25);
-            this.paymentstatusinput.TabIndex = 6;
-            // 
-            // updatepaymentbtn
-            // 
-            this.updatepaymentbtn.BackColor = System.Drawing.Color.DarkKhaki;
-            this.updatepaymentbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updatepaymentbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatepaymentbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.updatepaymentbtn.Location = new System.Drawing.Point(190, 188);
-            this.updatepaymentbtn.Name = "updatepaymentbtn";
-            this.updatepaymentbtn.Size = new System.Drawing.Size(175, 44);
-            this.updatepaymentbtn.TabIndex = 7;
-            this.updatepaymentbtn.Text = "Update";
-            this.updatepaymentbtn.UseVisualStyleBackColor = false;
-            // 
             // deletepaymentbtn
             // 
+            this.deletepaymentbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.deletepaymentbtn.BackColor = System.Drawing.Color.IndianRed;
             this.deletepaymentbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deletepaymentbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -468,24 +457,110 @@
             this.deletepaymentbtn.Text = "Delete";
             this.deletepaymentbtn.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel1
+            // updatepaymentbtn
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.updatepaymentbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.updatepaymentbtn.BackColor = System.Drawing.Color.DarkKhaki;
+            this.updatepaymentbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updatepaymentbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatepaymentbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.updatepaymentbtn.Location = new System.Drawing.Point(190, 188);
+            this.updatepaymentbtn.Name = "updatepaymentbtn";
+            this.updatepaymentbtn.Size = new System.Drawing.Size(175, 44);
+            this.updatepaymentbtn.TabIndex = 7;
+            this.updatepaymentbtn.Text = "Update";
+            this.updatepaymentbtn.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // paymentstatusinput
             // 
-            this.panel2.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources._294bba2466aff48c4c5c7742e243cd3a;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(29, 22);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(694, 203);
-            this.panel2.TabIndex = 13;
+            this.paymentstatusinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.paymentstatusinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paymentstatusinput.Location = new System.Drawing.Point(495, 123);
+            this.paymentstatusinput.Name = "paymentstatusinput";
+            this.paymentstatusinput.Size = new System.Drawing.Size(162, 25);
+            this.paymentstatusinput.TabIndex = 6;
+            // 
+            // paymentidinput
+            // 
+            this.paymentidinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.paymentidinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paymentidinput.Location = new System.Drawing.Point(172, 123);
+            this.paymentidinput.Name = "paymentidinput";
+            this.paymentidinput.Size = new System.Drawing.Size(162, 25);
+            this.paymentidinput.TabIndex = 5;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Salmon;
+            this.label10.Location = new System.Drawing.Point(359, 127);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(117, 19);
+            this.label10.TabIndex = 4;
+            this.label10.Text = " Payment Status";
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Salmon;
+            this.label9.Location = new System.Drawing.Point(80, 126);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(86, 19);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Payment Id";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Salmon;
+            this.label8.Location = new System.Drawing.Point(253, 38);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(236, 37);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Update Payment";
+            // 
+            // paymenttable
+            // 
+            this.paymenttable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.paymenttable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.paymenttable.Location = new System.Drawing.Point(93, 329);
+            this.paymenttable.Name = "paymenttable";
+            this.paymenttable.Size = new System.Drawing.Size(564, 266);
+            this.paymenttable.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Salmon;
+            this.label7.Location = new System.Drawing.Point(262, 277);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(214, 37);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Payment Table";
             // 
             // Form4
             // 
@@ -508,9 +583,9 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ordertable)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ordertable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymenttable)).EndInit();
             this.ResumeLayout(false);
 

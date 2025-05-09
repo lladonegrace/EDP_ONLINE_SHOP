@@ -244,11 +244,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.MistyRose;
-            this.label3.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightCoral;
             this.label3.Location = new System.Drawing.Point(41, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 32);
+            this.label3.Size = new System.Drawing.Size(195, 37);
             this.label3.TabIndex = 12;
             this.label3.Text = "Add Products";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -257,23 +257,24 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.MistyRose;
-            this.label6.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.LightCoral;
-            this.label6.Location = new System.Drawing.Point(255, 99);
+            this.label6.Location = new System.Drawing.Point(34, 85);
             this.label6.MinimumSize = new System.Drawing.Size(40, 30);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 30);
+            this.label6.Size = new System.Drawing.Size(96, 30);
             this.label6.TabIndex = 21;
             this.label6.Text = "Product Name";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.MistyRose;
-            this.label4.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LightCoral;
-            this.label4.Location = new System.Drawing.Point(291, 230);
+            this.label4.Location = new System.Drawing.Point(90, 216);
             this.label4.MinimumSize = new System.Drawing.Size(40, 30);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 30);
@@ -285,12 +286,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.MistyRose;
-            this.label5.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.LightCoral;
-            this.label5.Location = new System.Drawing.Point(277, 140);
+            this.label5.Location = new System.Drawing.Point(59, 124);
             this.label5.MinimumSize = new System.Drawing.Size(40, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 30);
+            this.label5.Size = new System.Drawing.Size(71, 30);
             this.label5.TabIndex = 24;
             this.label5.Text = "Product Id";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -299,12 +300,12 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.MistyRose;
-            this.label7.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.LightCoral;
             this.label7.Location = new System.Drawing.Point(265, 189);
             this.label7.MinimumSize = new System.Drawing.Size(40, 30);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 30);
+            this.label7.Size = new System.Drawing.Size(81, 30);
             this.label7.TabIndex = 26;
             this.label7.Text = "Category Id";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -313,12 +314,12 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.MistyRose;
-            this.label8.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.LightCoral;
-            this.label8.Location = new System.Drawing.Point(273, 271);
+            this.label8.Location = new System.Drawing.Point(52, 255);
             this.label8.MinimumSize = new System.Drawing.Size(40, 30);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 30);
+            this.label8.Size = new System.Drawing.Size(78, 30);
             this.label8.TabIndex = 29;
             this.label8.Text = "Description";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -340,11 +341,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.MistyRose;
-            this.label9.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.LightCoral;
             this.label9.Location = new System.Drawing.Point(312, 25);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(152, 32);
+            this.label9.Size = new System.Drawing.Size(197, 37);
             this.label9.TabIndex = 31;
             this.label9.Text = "Product Table";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -361,11 +362,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.LightCoral;
-            this.label10.Location = new System.Drawing.Point(246, 391);
+            this.label10.Location = new System.Drawing.Point(259, 390);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(119, 32);
+            this.label10.Size = new System.Drawing.Size(157, 37);
             this.label10.TabIndex = 33;
             this.label10.Text = "Categories";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -521,7 +522,7 @@
             this.addbtn.BackColor = System.Drawing.Color.LimeGreen;
             this.addbtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.addbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addbtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.addbtn.Location = new System.Drawing.Point(529, 289);
             this.addbtn.Name = "addbtn";
@@ -534,7 +535,7 @@
             // 
             this.updatebtn.BackColor = System.Drawing.Color.DarkKhaki;
             this.updatebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updatebtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatebtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatebtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.updatebtn.Location = new System.Drawing.Point(682, 289);
             this.updatebtn.Name = "updatebtn";
@@ -550,7 +551,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.deletebtn.BackColor = System.Drawing.Color.IndianRed;
             this.deletebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deletebtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletebtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletebtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.deletebtn.Location = new System.Drawing.Point(831, 289);
             this.deletebtn.Name = "deletebtn";
@@ -567,6 +568,10 @@
             this.panel3.BackColor = System.Drawing.Color.MistyRose;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(211, 12);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(770, 353);
@@ -593,11 +598,11 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.LightCoral;
-            this.label11.Location = new System.Drawing.Point(740, 395);
+            this.label11.Location = new System.Drawing.Point(724, 390);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(166, 32);
+            this.label11.Size = new System.Drawing.Size(222, 37);
             this.label11.TabIndex = 47;
             this.label11.Text = "Add Categories";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -606,12 +611,12 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label12.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.LightCoral;
             this.label12.Location = new System.Drawing.Point(714, 510);
             this.label12.MinimumSize = new System.Drawing.Size(40, 30);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 30);
+            this.label12.Size = new System.Drawing.Size(81, 30);
             this.label12.TabIndex = 48;
             this.label12.Text = "Category Id";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -620,12 +625,12 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label13.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.LightCoral;
             this.label13.Location = new System.Drawing.Point(692, 461);
             this.label13.MinimumSize = new System.Drawing.Size(40, 30);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(98, 30);
+            this.label13.Size = new System.Drawing.Size(106, 30);
             this.label13.TabIndex = 49;
             this.label13.Text = "Category Name";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -635,7 +640,7 @@
             this.addcategorybtn.BackColor = System.Drawing.Color.LimeGreen;
             this.addcategorybtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.addcategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addcategorybtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addcategorybtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addcategorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.addcategorybtn.Location = new System.Drawing.Point(704, 553);
             this.addcategorybtn.Name = "addcategorybtn";
@@ -648,7 +653,7 @@
             // 
             this.updatecategorybtn.BackColor = System.Drawing.Color.DarkKhaki;
             this.updatecategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updatecategorybtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatecategorybtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatecategorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.updatecategorybtn.Location = new System.Drawing.Point(828, 553);
             this.updatecategorybtn.Name = "updatecategorybtn";
@@ -661,7 +666,7 @@
             // 
             this.deletecategorybtn.BackColor = System.Drawing.Color.IndianRed;
             this.deletecategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deletecategorybtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deletecategorybtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletecategorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.deletecategorybtn.Location = new System.Drawing.Point(757, 602);
             this.deletecategorybtn.Name = "deletecategorybtn";
@@ -726,11 +731,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.producttable);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.MaximizeBox = false;

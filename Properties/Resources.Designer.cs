@@ -234,6 +234,26 @@ namespace EDP_ONLINE_SHOP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("download (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap e81a3de8acf05a5360c9a43b561f5160 {
+            get {
+                object obj = ResourceManager.GetObject("e81a3de8acf05a5360c9a43b561f5160", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap freepik_br_d66b3b8d_b559_4fd9_9464_8d926166b483 {
             get {
                 object obj = ResourceManager.GetObject("freepik_br_d66b3b8d-b559-4fd9-9464-8d926166b483", resourceCulture);
