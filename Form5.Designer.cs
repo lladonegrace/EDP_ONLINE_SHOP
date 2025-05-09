@@ -40,6 +40,8 @@
             this.inventorytable = new System.Windows.Forms.DataGridView();
             this.auditview = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
+            this.editbtn = new System.Windows.Forms.Button();
+            this.editbtn2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inventorytable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.auditview)).BeginInit();
@@ -179,9 +181,9 @@
             // auditview
             // 
             this.auditview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.auditview.Location = new System.Drawing.Point(251, 360);
+            this.auditview.Location = new System.Drawing.Point(251, 391);
             this.auditview.Name = "auditview";
-            this.auditview.Size = new System.Drawing.Size(589, 278);
+            this.auditview.Size = new System.Drawing.Size(589, 189);
             this.auditview.TabIndex = 13;
             // 
             // label3
@@ -189,18 +191,52 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.label3.Location = new System.Drawing.Point(232, 302);
+            this.label3.Location = new System.Drawing.Point(230, 340);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 32);
             this.label3.TabIndex = 14;
             this.label3.Text = "Audit Log";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // editbtn
+            // 
+            this.editbtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.editbtn.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.editbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleVioletRed;
+            this.editbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.editbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editbtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editbtn.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.editbtn.Location = new System.Drawing.Point(477, 599);
+            this.editbtn.Name = "editbtn";
+            this.editbtn.Size = new System.Drawing.Size(94, 34);
+            this.editbtn.TabIndex = 15;
+            this.editbtn.Text = "Edit";
+            this.editbtn.UseVisualStyleBackColor = false;
+            // 
+            // editbtn2
+            // 
+            this.editbtn2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.editbtn2.FlatAppearance.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.editbtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.PaleVioletRed;
+            this.editbtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.editbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editbtn2.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editbtn2.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.editbtn2.Location = new System.Drawing.Point(477, 289);
+            this.editbtn2.Name = "editbtn2";
+            this.editbtn2.Size = new System.Drawing.Size(94, 34);
+            this.editbtn2.TabIndex = 16;
+            this.editbtn2.Text = "Edit";
+            this.editbtn2.UseVisualStyleBackColor = false;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(878, 668);
+            this.Controls.Add(this.editbtn2);
+            this.Controls.Add(this.editbtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.auditview);
             this.Controls.Add(this.inventorytable);
@@ -235,5 +271,7 @@
         private System.Windows.Forms.DataGridView inventorytable;
         private System.Windows.Forms.DataGridView auditview;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button editbtn;
+        private System.Windows.Forms.Button editbtn2;
     }
 }

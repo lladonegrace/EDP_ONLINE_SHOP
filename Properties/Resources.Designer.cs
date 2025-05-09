@@ -63,6 +63,16 @@ namespace EDP_ONLINE_SHOP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _294bba2466aff48c4c5c7742e243cd3a {
+            get {
+                object obj = ResourceManager.GetObject("294bba2466aff48c4c5c7742e243cd3a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5021018a_9c4a_436f_bf13_e847f67eaf38_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("5021018a-9c4a-436f-bf13-e847f67eaf38-removebg-preview", resourceCulture);
@@ -347,6 +357,16 @@ namespace EDP_ONLINE_SHOP.Properties {
         internal static System.Drawing.Bitmap pngtree_discount_label_on_packet_with_different_clothes_image_78227 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-discount-label-on-packet-with-different-clothes-image_78227", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_05_09_230752 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-05-09 230752", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

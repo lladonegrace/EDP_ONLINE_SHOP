@@ -37,6 +37,7 @@
             this.forgotlink = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.labelshop = new System.Windows.Forms.Label();
+            this.createaccbtn = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // usernamebox
@@ -164,12 +165,25 @@
             this.labelshop.TabIndex = 9;
             this.labelshop.Text = "Enter your Login Credentials";
             // 
+            // createaccbtn
+            // 
+            this.createaccbtn.AutoSize = true;
+            this.createaccbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createaccbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.createaccbtn.Location = new System.Drawing.Point(329, 410);
+            this.createaccbtn.Name = "createaccbtn";
+            this.createaccbtn.Size = new System.Drawing.Size(124, 13);
+            this.createaccbtn.TabIndex = 10;
+            this.createaccbtn.Text = "Create New Account";
+            this.createaccbtn.Click += new System.EventHandler(this.createaccbtn_Click);
+            // 
             // Logincs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleVioletRed;
             this.ClientSize = new System.Drawing.Size(736, 489);
+            this.Controls.Add(this.createaccbtn);
             this.Controls.Add(this.labelshop);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.forgotlink);
@@ -200,5 +214,6 @@
         private System.Windows.Forms.Label forgotlink;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label labelshop;
+        private System.Windows.Forms.Label createaccbtn;
     }
 }

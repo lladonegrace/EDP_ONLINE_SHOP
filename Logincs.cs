@@ -184,5 +184,12 @@ namespace EDP_ONLINE_SHOP
             forgotform.Show();
             this.Hide();
         }
+
+        private void createaccbtn_Click(object sender, EventArgs e)
+        {
+            Register regisform = new Register();
+            regisform .Show();
+            this.Hide();
+        }
     }
 }

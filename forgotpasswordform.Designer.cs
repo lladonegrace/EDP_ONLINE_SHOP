@@ -70,6 +70,7 @@
             this.emailinput.Name = "emailinput";
             this.emailinput.Size = new System.Drawing.Size(397, 37);
             this.emailinput.TabIndex = 2;
+            this.emailinput.TextChanged += new System.EventHandler(this.emailinput_TextChanged);
             // 
             // sendbtn
             // 
@@ -82,6 +83,7 @@
             this.sendbtn.TabIndex = 3;
             this.sendbtn.Text = "Send";
             this.sendbtn.UseVisualStyleBackColor = false;
+            this.sendbtn.Click += new System.EventHandler(this.sendbtn_Click);
             // 
             // backbtn
             // 
@@ -111,6 +113,7 @@
             this.Name = "forgotpasswordform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "forgotpasswordform";
+            this.Load += new System.EventHandler(this.forgotpasswordform_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

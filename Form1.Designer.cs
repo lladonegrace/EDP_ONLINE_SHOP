@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.logoutbtn = new System.Windows.Forms.Button();
             this.inventorybtn = new System.Windows.Forms.Button();
             this.orderitemsbtn = new System.Windows.Forms.Button();
             this.productsbtn = new System.Windows.Forms.Button();
             this.customerbtn = new System.Windows.Forms.Button();
             this.dashboardbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -48,8 +50,6 @@
             this.orderinfobtn = new System.Windows.Forms.Button();
             this.customerinfobtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.logoutbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.todaysorderview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersummary)).BeginInit();
@@ -71,6 +71,24 @@
             this.panel1.Size = new System.Drawing.Size(206, 669);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // logoutbtn
+            // 
+            this.logoutbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logoutbtn.Location = new System.Drawing.Point(0, 630);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(206, 39);
+            this.logoutbtn.TabIndex = 29;
+            this.logoutbtn.TabStop = false;
+            this.logoutbtn.Text = "Logout";
+            this.logoutbtn.UseVisualStyleBackColor = false;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
             // inventorybtn
             // 
@@ -158,6 +176,16 @@
             this.label1.Text = "Admin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -193,7 +221,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.monthCalendar1.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.monthCalendar1.Location = new System.Drawing.Point(633, 407);
+            this.monthCalendar1.Location = new System.Drawing.Point(722, 449);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 15;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
@@ -203,7 +231,7 @@
             this.todaysorderview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.todaysorderview.Location = new System.Drawing.Point(236, 449);
             this.todaysorderview.Name = "todaysorderview";
-            this.todaysorderview.Size = new System.Drawing.Size(371, 142);
+            this.todaysorderview.Size = new System.Drawing.Size(456, 162);
             this.todaysorderview.TabIndex = 16;
             this.todaysorderview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.todaysorderview_CellContentClick);
             // 
@@ -246,9 +274,9 @@
             this.button12.BackColor = System.Drawing.Color.LightCoral;
             this.button12.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.SystemColors.Window;
-            this.button12.Location = new System.Drawing.Point(369, 90);
+            this.button12.Location = new System.Drawing.Point(396, 90);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(110, 57);
+            this.button12.Size = new System.Drawing.Size(137, 57);
             this.button12.TabIndex = 24;
             this.button12.Text = "Monthly Sales";
             this.button12.UseVisualStyleBackColor = false;
@@ -260,9 +288,9 @@
             this.button11.BackColor = System.Drawing.Color.LightCoral;
             this.button11.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.SystemColors.Window;
-            this.button11.Location = new System.Drawing.Point(485, 90);
+            this.button11.Location = new System.Drawing.Point(539, 90);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(110, 57);
+            this.button11.Size = new System.Drawing.Size(137, 57);
             this.button11.TabIndex = 25;
             this.button11.Text = "Latest Order";
             this.button11.UseVisualStyleBackColor = false;
@@ -277,9 +305,9 @@
             this.customerspendbtn.BackColor = System.Drawing.Color.LightCoral;
             this.customerspendbtn.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerspendbtn.ForeColor = System.Drawing.SystemColors.Window;
-            this.customerspendbtn.Location = new System.Drawing.Point(734, 90);
+            this.customerspendbtn.Location = new System.Drawing.Point(825, 90);
             this.customerspendbtn.Name = "customerspendbtn";
-            this.customerspendbtn.Size = new System.Drawing.Size(127, 57);
+            this.customerspendbtn.Size = new System.Drawing.Size(137, 57);
             this.customerspendbtn.TabIndex = 26;
             this.customerspendbtn.Text = "Customer Spending";
             this.customerspendbtn.UseVisualStyleBackColor = false;
@@ -291,9 +319,9 @@
             this.orderinfobtn.BackColor = System.Drawing.Color.LightCoral;
             this.orderinfobtn.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderinfobtn.ForeColor = System.Drawing.SystemColors.Window;
-            this.orderinfobtn.Location = new System.Drawing.Point(601, 90);
+            this.orderinfobtn.Location = new System.Drawing.Point(682, 90);
             this.orderinfobtn.Name = "orderinfobtn";
-            this.orderinfobtn.Size = new System.Drawing.Size(127, 57);
+            this.orderinfobtn.Size = new System.Drawing.Size(137, 57);
             this.orderinfobtn.TabIndex = 27;
             this.orderinfobtn.Text = "Order Info";
             this.orderinfobtn.UseVisualStyleBackColor = false;
@@ -307,7 +335,7 @@
             this.customerinfobtn.ForeColor = System.Drawing.SystemColors.Window;
             this.customerinfobtn.Location = new System.Drawing.Point(253, 90);
             this.customerinfobtn.Name = "customerinfobtn";
-            this.customerinfobtn.Size = new System.Drawing.Size(110, 57);
+            this.customerinfobtn.Size = new System.Drawing.Size(137, 57);
             this.customerinfobtn.TabIndex = 28;
             this.customerinfobtn.Text = "Customer Info";
             this.customerinfobtn.UseVisualStyleBackColor = false;
@@ -322,43 +350,15 @@
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(633, 230);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(227, 165);
+            this.panel2.Size = new System.Drawing.Size(342, 206);
             this.panel2.TabIndex = 17;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // logoutbtn
-            // 
-            this.logoutbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.logoutbtn.Location = new System.Drawing.Point(0, 630);
-            this.logoutbtn.Name = "logoutbtn";
-            this.logoutbtn.Size = new System.Drawing.Size(206, 39);
-            this.logoutbtn.TabIndex = 29;
-            this.logoutbtn.TabStop = false;
-            this.logoutbtn.Text = "Logout";
-            this.logoutbtn.UseVisualStyleBackColor = false;
-            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(878, 668);
+            this.ClientSize = new System.Drawing.Size(993, 668);
             this.Controls.Add(this.customerinfobtn);
             this.Controls.Add(this.orderinfobtn);
             this.Controls.Add(this.customerspendbtn);

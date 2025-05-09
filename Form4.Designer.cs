@@ -35,17 +35,18 @@
             this.customerbtn = new System.Windows.Forms.Button();
             this.dashboardbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.orderitemtable = new System.Windows.Forms.Label();
             this.orderitemview = new System.Windows.Forms.DataGridView();
-            this.labelorder = new System.Windows.Forms.Label();
-            this.ordertable = new System.Windows.Forms.DataGridView();
-            this.paymenttable = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderitemview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordertable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paymenttable)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -149,6 +150,70 @@
             this.label1.Text = "Admin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // orderitemtable
+            // 
+            this.orderitemtable.AutoSize = true;
+            this.orderitemtable.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderitemtable.ForeColor = System.Drawing.Color.LightCoral;
+            this.orderitemtable.Location = new System.Drawing.Point(276, 247);
+            this.orderitemtable.Name = "orderitemtable";
+            this.orderitemtable.Size = new System.Drawing.Size(196, 32);
+            this.orderitemtable.TabIndex = 11;
+            this.orderitemtable.Text = "Order Items Table";
+            this.orderitemtable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // orderitemview
+            // 
+            this.orderitemview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.orderitemview.Location = new System.Drawing.Point(120, 303);
+            this.orderitemview.Name = "orderitemview";
+            this.orderitemview.Size = new System.Drawing.Size(522, 266);
+            this.orderitemview.TabIndex = 12;
+            this.orderitemview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.orderitemview_CellContentClick);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(227, 24);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(754, 632);
+            this.tabControl1.TabIndex = 17;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.SeaShell;
+            this.tabPage1.Controls.Add(this.panel2);
+            this.tabPage1.Controls.Add(this.orderitemtable);
+            this.tabPage1.Controls.Add(this.orderitemview);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(746, 606);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Order_items_Table";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(746, 606);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Order";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(746, 606);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Payment";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
@@ -159,78 +224,22 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // orderitemtable
+            // panel2
             // 
-            this.orderitemtable.AutoSize = true;
-            this.orderitemtable.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orderitemtable.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.orderitemtable.Location = new System.Drawing.Point(231, 45);
-            this.orderitemtable.Name = "orderitemtable";
-            this.orderitemtable.Size = new System.Drawing.Size(196, 32);
-            this.orderitemtable.TabIndex = 11;
-            this.orderitemtable.Text = "Order Items Table";
-            this.orderitemtable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // orderitemview
-            // 
-            this.orderitemview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.orderitemview.Location = new System.Drawing.Point(255, 80);
-            this.orderitemview.Name = "orderitemview";
-            this.orderitemview.Size = new System.Drawing.Size(564, 150);
-            this.orderitemview.TabIndex = 12;
-            // 
-            // labelorder
-            // 
-            this.labelorder.AutoSize = true;
-            this.labelorder.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelorder.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.labelorder.Location = new System.Drawing.Point(231, 270);
-            this.labelorder.Name = "labelorder";
-            this.labelorder.Size = new System.Drawing.Size(134, 32);
-            this.labelorder.TabIndex = 13;
-            this.labelorder.Text = "Order Table";
-            this.labelorder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ordertable
-            // 
-            this.ordertable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ordertable.Location = new System.Drawing.Point(255, 305);
-            this.ordertable.Name = "ordertable";
-            this.ordertable.Size = new System.Drawing.Size(564, 131);
-            this.ordertable.TabIndex = 14;
-            // 
-            // paymenttable
-            // 
-            this.paymenttable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.paymenttable.Location = new System.Drawing.Point(255, 506);
-            this.paymenttable.Name = "paymenttable";
-            this.paymenttable.Size = new System.Drawing.Size(564, 134);
-            this.paymenttable.TabIndex = 15;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.label2.Location = new System.Drawing.Point(231, 471);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 32);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Paymets";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel2.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources._294bba2466aff48c4c5c7742e243cd3a;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(29, 22);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(694, 203);
+            this.panel2.TabIndex = 13;
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 668);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.paymenttable);
-            this.Controls.Add(this.ordertable);
-            this.Controls.Add(this.labelorder);
-            this.Controls.Add(this.orderitemview);
-            this.Controls.Add(this.orderitemtable);
+            this.ClientSize = new System.Drawing.Size(993, 668);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tabControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form4";
@@ -240,10 +249,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderitemview)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ordertable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paymenttable)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -258,10 +267,11 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label orderitemtable;
         private System.Windows.Forms.DataGridView orderitemview;
-        private System.Windows.Forms.Label labelorder;
-        private System.Windows.Forms.DataGridView ordertable;
         private System.Windows.Forms.Button inventorybtn;
-        private System.Windows.Forms.DataGridView paymenttable;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel panel2;
     }
 }

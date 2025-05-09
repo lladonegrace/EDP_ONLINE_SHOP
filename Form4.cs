@@ -86,5 +86,9 @@ namespace EDP_ONLINE_SHOP
             this.Hide();
         }
 
+        private void orderitemview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
