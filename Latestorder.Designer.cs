@@ -60,6 +60,11 @@
             // 
             // latestordertable
             // 
+            this.latestordertable.AllowUserToResizeColumns = false;
+            this.latestordertable.AllowUserToResizeRows = false;
+            this.latestordertable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.latestordertable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.latestordertable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.latestordertable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.latestordertable.Location = new System.Drawing.Point(95, 109);
             this.latestordertable.Name = "latestordertable";
