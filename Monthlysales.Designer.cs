@@ -60,6 +60,11 @@
             // 
             // monthlysalesview
             // 
+            this.monthlysalesview.AllowUserToResizeColumns = false;
+            this.monthlysalesview.AllowUserToResizeRows = false;
+            this.monthlysalesview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.monthlysalesview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.monthlysalesview.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.monthlysalesview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.monthlysalesview.Location = new System.Drawing.Point(67, 100);
             this.monthlysalesview.Name = "monthlysalesview";

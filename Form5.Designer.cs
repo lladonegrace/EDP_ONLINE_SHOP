@@ -177,6 +177,11 @@
             // 
             // inventorytable
             // 
+            this.inventorytable.AllowUserToResizeColumns = false;
+            this.inventorytable.AllowUserToResizeRows = false;
+            this.inventorytable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.inventorytable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.inventorytable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.inventorytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.inventorytable.Location = new System.Drawing.Point(88, 294);
             this.inventorytable.Name = "inventorytable";
@@ -231,6 +236,11 @@
             // 
             // auditview
             // 
+            this.auditview.AllowUserToResizeColumns = false;
+            this.auditview.AllowUserToResizeRows = false;
+            this.auditview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.auditview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.auditview.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.auditview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.auditview.Location = new System.Drawing.Point(112, 267);
             this.auditview.Name = "auditview";

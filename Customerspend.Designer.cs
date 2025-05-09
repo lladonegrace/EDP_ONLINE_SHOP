@@ -60,6 +60,11 @@
             // 
             // customerspendtable
             // 
+            this.customerspendtable.AllowUserToResizeColumns = false;
+            this.customerspendtable.AllowUserToResizeRows = false;
+            this.customerspendtable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.customerspendtable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.customerspendtable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.customerspendtable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.customerspendtable.Location = new System.Drawing.Point(75, 115);
             this.customerspendtable.Name = "customerspendtable";

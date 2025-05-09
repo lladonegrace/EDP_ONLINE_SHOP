@@ -75,6 +75,11 @@
             // 
             // orderinfotable
             // 
+            this.orderinfotable.AllowUserToResizeColumns = false;
+            this.orderinfotable.AllowUserToResizeRows = false;
+            this.orderinfotable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.orderinfotable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.orderinfotable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.orderinfotable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.orderinfotable.Location = new System.Drawing.Point(59, 105);
             this.orderinfotable.Name = "orderinfotable";

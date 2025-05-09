@@ -60,6 +60,11 @@
             // 
             // customerinfotable
             // 
+            this.customerinfotable.AllowUserToResizeColumns = false;
+            this.customerinfotable.AllowUserToResizeRows = false;
+            this.customerinfotable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.customerinfotable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.customerinfotable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.customerinfotable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.customerinfotable.Location = new System.Drawing.Point(68, 131);
             this.customerinfotable.Name = "customerinfotable";
