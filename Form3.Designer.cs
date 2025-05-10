@@ -65,6 +65,8 @@
             this.updatebtn = new System.Windows.Forms.Button();
             this.deletebtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.productsearch = new System.Windows.Forms.TextBox();
+            this.exportexcelbtn = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -73,8 +75,8 @@
             this.addcategorybtn = new System.Windows.Forms.Button();
             this.updatecategorybtn = new System.Windows.Forms.Button();
             this.deletecategorybtn = new System.Windows.Forms.Button();
-            this.exportexcelbtn = new System.Windows.Forms.Button();
-            this.productsearch = new System.Windows.Forms.TextBox();
+            this.transactionbtn = new System.Windows.Forms.Button();
+            this.logoutbtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -395,6 +397,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.panel2.Controls.Add(this.logoutbtn);
+            this.panel2.Controls.Add(this.transactionbtn);
             this.panel2.Controls.Add(this.inventorybtn);
             this.panel2.Controls.Add(this.orderitemsbtn);
             this.panel2.Controls.Add(this.productsbtn);
@@ -624,6 +628,38 @@
             this.panel3.Size = new System.Drawing.Size(770, 360);
             this.panel3.TabIndex = 44;
             // 
+            // productsearch
+            // 
+            this.productsearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.productsearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.productsearch.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productsearch.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.productsearch.Location = new System.Drawing.Point(318, 87);
+            this.productsearch.Name = "productsearch";
+            this.productsearch.Size = new System.Drawing.Size(203, 25);
+            this.productsearch.TabIndex = 54;
+            this.productsearch.Text = "  Search";
+            // 
+            // exportexcelbtn
+            // 
+            this.exportexcelbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.exportexcelbtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.exportexcelbtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.exportexcelbtn.FlatAppearance.BorderSize = 2;
+            this.exportexcelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exportexcelbtn.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportexcelbtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.exportexcelbtn.Location = new System.Drawing.Point(617, 85);
+            this.exportexcelbtn.Name = "exportexcelbtn";
+            this.exportexcelbtn.Size = new System.Drawing.Size(141, 27);
+            this.exportexcelbtn.TabIndex = 58;
+            this.exportexcelbtn.Text = "Export to MS Excel";
+            this.exportexcelbtn.UseVisualStyleBackColor = false;
+            // 
             // textBox5
             // 
             this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -746,37 +782,41 @@
             this.deletecategorybtn.Text = "Delete";
             this.deletecategorybtn.UseVisualStyleBackColor = false;
             // 
-            // exportexcelbtn
+            // transactionbtn
             // 
-            this.exportexcelbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.transactionbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.exportexcelbtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.exportexcelbtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.exportexcelbtn.FlatAppearance.BorderSize = 2;
-            this.exportexcelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exportexcelbtn.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exportexcelbtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.exportexcelbtn.Location = new System.Drawing.Point(617, 85);
-            this.exportexcelbtn.Name = "exportexcelbtn";
-            this.exportexcelbtn.Size = new System.Drawing.Size(141, 27);
-            this.exportexcelbtn.TabIndex = 58;
-            this.exportexcelbtn.Text = "Export to MS Excel";
-            this.exportexcelbtn.UseVisualStyleBackColor = false;
+            this.transactionbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.transactionbtn.FlatAppearance.BorderSize = 0;
+            this.transactionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transactionbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transactionbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.transactionbtn.Location = new System.Drawing.Point(0, 493);
+            this.transactionbtn.Name = "transactionbtn";
+            this.transactionbtn.Size = new System.Drawing.Size(206, 45);
+            this.transactionbtn.TabIndex = 44;
+            this.transactionbtn.Text = "Transactions";
+            this.transactionbtn.UseVisualStyleBackColor = false;
+            this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
             // 
-            // productsearch
+            // logoutbtn
             // 
-            this.productsearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.logoutbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.productsearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.productsearch.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productsearch.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.productsearch.Location = new System.Drawing.Point(318, 87);
-            this.productsearch.Name = "productsearch";
-            this.productsearch.Size = new System.Drawing.Size(203, 25);
-            this.productsearch.TabIndex = 54;
-            this.productsearch.Text = "  Search";
+            this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logoutbtn.Location = new System.Drawing.Point(0, 630);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(206, 39);
+            this.logoutbtn.TabIndex = 45;
+            this.logoutbtn.TabStop = false;
+            this.logoutbtn.Text = "Logout";
+            this.logoutbtn.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -908,5 +948,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button exportexcelbtn;
         private System.Windows.Forms.TextBox productsearch;
+        private System.Windows.Forms.Button transactionbtn;
+        private System.Windows.Forms.Button logoutbtn;
     }
 }

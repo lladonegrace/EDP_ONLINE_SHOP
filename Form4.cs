@@ -94,5 +94,12 @@ namespace EDP_ONLINE_SHOP
         {
 
         }
+
+        private void transactionbtn_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            form6.Show();
+            this.Hide();
+        }
     }
 }

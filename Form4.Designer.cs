@@ -40,6 +40,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.productsearch = new System.Windows.Forms.TextBox();
             this.deleteorderbtn = new System.Windows.Forms.Button();
             this.updateorderbtn = new System.Windows.Forms.Button();
             this.orderstatusinput = new System.Windows.Forms.TextBox();
@@ -52,6 +54,8 @@
             this.ordertable = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.deletepaymentbtn = new System.Windows.Forms.Button();
             this.updatepaymentbtn = new System.Windows.Forms.Button();
             this.paymentstatusinput = new System.Windows.Forms.TextBox();
@@ -61,10 +65,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.paymenttable = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.productsearch = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.transactionbtn = new System.Windows.Forms.Button();
+            this.logoutbtn = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -83,6 +85,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.panel1.Controls.Add(this.logoutbtn);
+            this.panel1.Controls.Add(this.transactionbtn);
             this.panel1.Controls.Add(this.inventorybtn);
             this.panel1.Controls.Add(this.orderitemsbtn);
             this.panel1.Controls.Add(this.productsbtn);
@@ -209,7 +213,7 @@
             this.orderitemview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.orderitemview.Location = new System.Drawing.Point(97, 306);
             this.orderitemview.Name = "orderitemview";
-            this.orderitemview.Size = new System.Drawing.Size(564, 266);
+            this.orderitemview.Size = new System.Drawing.Size(593, 272);
             this.orderitemview.TabIndex = 12;
             this.orderitemview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.orderitemview_CellContentClick);
             // 
@@ -221,10 +225,11 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(227, 12);
+            this.tabControl1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(212, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(754, 644);
+            this.tabControl1.Size = new System.Drawing.Size(783, 656);
             this.tabControl1.TabIndex = 17;
             // 
             // tabPage1
@@ -233,10 +238,10 @@
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Controls.Add(this.orderitemtable);
             this.tabPage1.Controls.Add(this.orderitemview);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(746, 618);
+            this.tabPage1.Size = new System.Drawing.Size(775, 624);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Order_items_Table";
             // 
@@ -256,12 +261,44 @@
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.ordertable);
             this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(746, 618);
+            this.tabPage2.Size = new System.Drawing.Size(775, 624);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Order";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.button1.Location = new System.Drawing.Point(484, 320);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(209, 31);
+            this.button1.TabIndex = 58;
+            this.button1.Text = "Export to MS Excel";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // productsearch
+            // 
+            this.productsearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.productsearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.productsearch.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productsearch.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.productsearch.Location = new System.Drawing.Point(100, 326);
+            this.productsearch.Name = "productsearch";
+            this.productsearch.Size = new System.Drawing.Size(232, 25);
+            this.productsearch.TabIndex = 55;
+            this.productsearch.Text = "  Search";
             // 
             // deleteorderbtn
             // 
@@ -275,7 +312,7 @@
             this.deleteorderbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.deleteorderbtn.Location = new System.Drawing.Point(456, 166);
             this.deleteorderbtn.Name = "deleteorderbtn";
-            this.deleteorderbtn.Size = new System.Drawing.Size(175, 44);
+            this.deleteorderbtn.Size = new System.Drawing.Size(204, 44);
             this.deleteorderbtn.TabIndex = 10;
             this.deleteorderbtn.Text = "Delete";
             this.deleteorderbtn.UseVisualStyleBackColor = false;
@@ -292,7 +329,7 @@
             this.updateorderbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.updateorderbtn.Location = new System.Drawing.Point(456, 99);
             this.updateorderbtn.Name = "updateorderbtn";
-            this.updateorderbtn.Size = new System.Drawing.Size(175, 44);
+            this.updateorderbtn.Size = new System.Drawing.Size(204, 44);
             this.updateorderbtn.TabIndex = 9;
             this.updateorderbtn.Text = "Update";
             this.updateorderbtn.UseVisualStyleBackColor = false;
@@ -305,7 +342,7 @@
             this.orderstatusinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderstatusinput.Location = new System.Drawing.Point(234, 185);
             this.orderstatusinput.Name = "orderstatusinput";
-            this.orderstatusinput.Size = new System.Drawing.Size(170, 25);
+            this.orderstatusinput.Size = new System.Drawing.Size(199, 25);
             this.orderstatusinput.TabIndex = 8;
             // 
             // orderidinput
@@ -316,7 +353,7 @@
             this.orderidinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderidinput.Location = new System.Drawing.Point(234, 141);
             this.orderidinput.Name = "orderidinput";
-            this.orderidinput.Size = new System.Drawing.Size(170, 25);
+            this.orderidinput.Size = new System.Drawing.Size(199, 25);
             this.orderidinput.TabIndex = 7;
             // 
             // customeridinput
@@ -327,7 +364,7 @@
             this.customeridinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customeridinput.Location = new System.Drawing.Point(234, 99);
             this.customeridinput.Name = "customeridinput";
-            this.customeridinput.Size = new System.Drawing.Size(170, 25);
+            this.customeridinput.Size = new System.Drawing.Size(199, 25);
             this.customeridinput.TabIndex = 6;
             // 
             // label6
@@ -399,7 +436,7 @@
             this.ordertable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ordertable.Location = new System.Drawing.Point(100, 357);
             this.ordertable.Name = "ordertable";
-            this.ordertable.Size = new System.Drawing.Size(564, 230);
+            this.ordertable.Size = new System.Drawing.Size(593, 242);
             this.ordertable.TabIndex = 1;
             // 
             // label2
@@ -431,11 +468,41 @@
             this.tabPage3.Controls.Add(this.label8);
             this.tabPage3.Controls.Add(this.paymenttable);
             this.tabPage3.Controls.Add(this.label7);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 28);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(746, 618);
+            this.tabPage3.Size = new System.Drawing.Size(775, 624);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Payment";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox1.Location = new System.Drawing.Point(93, 335);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(203, 25);
+            this.textBox1.TabIndex = 55;
+            this.textBox1.Text = "  Search";
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.LimeGreen;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(482, 177);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(175, 44);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Export to MS Excel";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // deletepaymentbtn
             // 
@@ -563,67 +630,41 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Payment Table";
             // 
-            // productsearch
+            // transactionbtn
             // 
-            this.productsearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.transactionbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.productsearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.productsearch.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productsearch.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.productsearch.Location = new System.Drawing.Point(100, 326);
-            this.productsearch.Name = "productsearch";
-            this.productsearch.Size = new System.Drawing.Size(203, 25);
-            this.productsearch.TabIndex = 55;
-            this.productsearch.Text = "  Search";
+            this.transactionbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.transactionbtn.FlatAppearance.BorderSize = 0;
+            this.transactionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transactionbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transactionbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.transactionbtn.Location = new System.Drawing.Point(0, 493);
+            this.transactionbtn.Name = "transactionbtn";
+            this.transactionbtn.Size = new System.Drawing.Size(206, 45);
+            this.transactionbtn.TabIndex = 31;
+            this.transactionbtn.Text = "Transactions";
+            this.transactionbtn.UseVisualStyleBackColor = false;
+            this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
             // 
-            // button1
+            // logoutbtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.logoutbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.button1.Location = new System.Drawing.Point(484, 320);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 31);
-            this.button1.TabIndex = 58;
-            this.button1.Text = "Export to MS Excel";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.LimeGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(482, 177);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 44);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Export to MS Excel";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox1.Location = new System.Drawing.Point(93, 335);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 25);
-            this.textBox1.TabIndex = 55;
-            this.textBox1.Text = "  Search";
+            this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logoutbtn.Location = new System.Drawing.Point(0, 630);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(206, 39);
+            this.logoutbtn.TabIndex = 32;
+            this.logoutbtn.TabStop = false;
+            this.logoutbtn.Text = "Logout";
+            this.logoutbtn.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel1
             // 
@@ -644,13 +685,14 @@
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(29, 22);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(694, 203);
+            this.panel2.Size = new System.Drawing.Size(723, 209);
             this.panel2.TabIndex = 13;
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(993, 668);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControl1);
@@ -717,5 +759,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button transactionbtn;
+        private System.Windows.Forms.Button logoutbtn;
     }
 }

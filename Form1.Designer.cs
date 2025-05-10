@@ -48,6 +48,7 @@
             this.customerspendbtn = new System.Windows.Forms.Button();
             this.orderinfobtn = new System.Windows.Forms.Button();
             this.customerinfobtn = new System.Windows.Forms.Button();
+            this.transactionbtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
@@ -61,6 +62,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.panel1.Controls.Add(this.transactionbtn);
             this.panel1.Controls.Add(this.logoutbtn);
             this.panel1.Controls.Add(this.inventorybtn);
             this.panel1.Controls.Add(this.orderitemsbtn);
@@ -82,6 +84,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.logoutbtn.Location = new System.Drawing.Point(0, 630);
@@ -392,6 +395,24 @@
             this.customerinfobtn.UseVisualStyleBackColor = false;
             this.customerinfobtn.Click += new System.EventHandler(this.customerinfobtn_Click);
             // 
+            // transactionbtn
+            // 
+            this.transactionbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.transactionbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.transactionbtn.FlatAppearance.BorderSize = 0;
+            this.transactionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transactionbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transactionbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.transactionbtn.Location = new System.Drawing.Point(0, 493);
+            this.transactionbtn.Name = "transactionbtn";
+            this.transactionbtn.Size = new System.Drawing.Size(206, 45);
+            this.transactionbtn.TabIndex = 30;
+            this.transactionbtn.Text = "Transactions";
+            this.transactionbtn.UseVisualStyleBackColor = false;
+            this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -477,6 +498,7 @@
         private System.Windows.Forms.Button inventorybtn;
         private System.Windows.Forms.Button customerinfobtn;
         private System.Windows.Forms.Button logoutbtn;
+        private System.Windows.Forms.Button transactionbtn;
     }
 }
 
