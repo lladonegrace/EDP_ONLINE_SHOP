@@ -44,11 +44,11 @@
             // alreadyhaveaccbtn
             // 
             this.alreadyhaveaccbtn.AutoSize = true;
-            this.alreadyhaveaccbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alreadyhaveaccbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alreadyhaveaccbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.alreadyhaveaccbtn.Location = new System.Drawing.Point(301, 418);
+            this.alreadyhaveaccbtn.Location = new System.Drawing.Point(298, 414);
             this.alreadyhaveaccbtn.Name = "alreadyhaveaccbtn";
-            this.alreadyhaveaccbtn.Size = new System.Drawing.Size(152, 13);
+            this.alreadyhaveaccbtn.Size = new System.Drawing.Size(171, 19);
             this.alreadyhaveaccbtn.TabIndex = 20;
             this.alreadyhaveaccbtn.Text = "Already Have an Account";
             this.alreadyhaveaccbtn.Click += new System.EventHandler(this.alreadyhaveaccbtn_Click);
@@ -56,11 +56,11 @@
             // labelshop
             // 
             this.labelshop.AutoSize = true;
-            this.labelshop.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelshop.Font = new System.Drawing.Font("Tw Cen MT", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelshop.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.labelshop.Location = new System.Drawing.Point(237, 43);
+            this.labelshop.Location = new System.Drawing.Point(221, 43);
             this.labelshop.Name = "labelshop";
-            this.labelshop.Size = new System.Drawing.Size(277, 41);
+            this.labelshop.Size = new System.Drawing.Size(314, 40);
             this.labelshop.TabIndex = 19;
             this.labelshop.Text = "Create New Account";
             // 
@@ -128,11 +128,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.passlabel.AutoSize = true;
-            this.passlabel.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passlabel.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passlabel.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.passlabel.Location = new System.Drawing.Point(79, 241);
             this.passlabel.Name = "passlabel";
-            this.passlabel.Size = new System.Drawing.Size(119, 32);
+            this.passlabel.Size = new System.Drawing.Size(130, 31);
             this.passlabel.TabIndex = 13;
             this.passlabel.Text = "Password:";
             // 
@@ -142,11 +142,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.usernamelabel.AutoSize = true;
-            this.usernamelabel.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernamelabel.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernamelabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.usernamelabel.Location = new System.Drawing.Point(79, 182);
+            this.usernamelabel.Location = new System.Drawing.Point(72, 181);
             this.usernamelabel.Name = "usernamelabel";
-            this.usernamelabel.Size = new System.Drawing.Size(124, 32);
+            this.usernamelabel.Size = new System.Drawing.Size(133, 31);
             this.usernamelabel.TabIndex = 12;
             this.usernamelabel.Text = "Username:";
             // 
@@ -155,7 +155,7 @@
             this.usernamebox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.usernamebox.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernamebox.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernamebox.Location = new System.Drawing.Point(209, 178);
             this.usernamebox.Name = "usernamebox";
             this.usernamebox.Size = new System.Drawing.Size(326, 37);
@@ -168,11 +168,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Location = new System.Drawing.Point(122, 125);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 32);
+            this.label1.Size = new System.Drawing.Size(83, 31);
             this.label1.TabIndex = 22;
             this.label1.Text = "Email:";
             // 
@@ -181,7 +181,7 @@
             this.emailinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.emailinput.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailinput.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailinput.Location = new System.Drawing.Point(209, 120);
             this.emailinput.Name = "emailinput";
             this.emailinput.Size = new System.Drawing.Size(326, 37);

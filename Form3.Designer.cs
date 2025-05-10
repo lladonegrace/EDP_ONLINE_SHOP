@@ -39,52 +39,54 @@
             this.button2 = new System.Windows.Forms.Button();
             this.dashboardbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.producttable = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
-            this.categorytable = new System.Windows.Forms.DataGridView();
+            this.categorytableview = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.logoutbtn = new System.Windows.Forms.Button();
+            this.transactionbtn = new System.Windows.Forms.Button();
             this.inventorybtn = new System.Windows.Forms.Button();
             this.orderitemsbtn = new System.Windows.Forms.Button();
             this.productsbtn = new System.Windows.Forms.Button();
             this.customerbtn = new System.Windows.Forms.Button();
             this.dashbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.addbtn = new System.Windows.Forms.Button();
-            this.updatebtn = new System.Windows.Forms.Button();
-            this.deletebtn = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.productnameinput = new System.Windows.Forms.TextBox();
+            this.priceinput = new System.Windows.Forms.TextBox();
+            this.descriptioninput = new System.Windows.Forms.TextBox();
+            this.addbproductbtn = new System.Windows.Forms.Button();
+            this.updateproductsbtn = new System.Windows.Forms.Button();
+            this.deleteproductsbtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.producttableview = new System.Windows.Forms.DataGridView();
+            this.vate = new System.Windows.Forms.Label();
+            this.categoryidproductinput = new System.Windows.Forms.TextBox();
             this.productsearch = new System.Windows.Forms.TextBox();
             this.exportexcelbtn = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.categorynameinput = new System.Windows.Forms.TextBox();
+            this.categoryidinput = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.addcategorybtn = new System.Windows.Forms.Button();
             this.updatecategorybtn = new System.Windows.Forms.Button();
             this.deletecategorybtn = new System.Windows.Forms.Button();
-            this.transactionbtn = new System.Windows.Forms.Button();
-            this.logoutbtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.stockquantityinput = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.clearproductbtn = new System.Windows.Forms.Button();
+            this.clearcategorybtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.producttable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categorytable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categorytableview)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.producttableview)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -244,13 +246,23 @@
             this.label1.Text = "Admin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.MistyRose;
             this.label3.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightCoral;
-            this.label3.Location = new System.Drawing.Point(41, 25);
+            this.label3.Location = new System.Drawing.Point(77, 37);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(162, 31);
             this.label3.TabIndex = 12;
@@ -263,7 +275,7 @@
             this.label6.BackColor = System.Drawing.Color.MistyRose;
             this.label6.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.LightCoral;
-            this.label6.Location = new System.Drawing.Point(34, 85);
+            this.label6.Location = new System.Drawing.Point(34, 99);
             this.label6.MinimumSize = new System.Drawing.Size(40, 30);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 30);
@@ -278,7 +290,7 @@
             this.label4.BackColor = System.Drawing.Color.MistyRose;
             this.label4.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.LightCoral;
-            this.label4.Location = new System.Drawing.Point(90, 216);
+            this.label4.Location = new System.Drawing.Point(90, 180);
             this.label4.MinimumSize = new System.Drawing.Size(40, 30);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 30);
@@ -286,44 +298,13 @@
             this.label4.Text = "Price";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.MistyRose;
-            this.label5.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.LightCoral;
-            this.label5.Location = new System.Drawing.Point(59, 124);
-            this.label5.MinimumSize = new System.Drawing.Size(40, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 30);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Product Id";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.MistyRose;
-            this.label7.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.LightCoral;
-            this.label7.Location = new System.Drawing.Point(265, 189);
-            this.label7.MinimumSize = new System.Drawing.Size(40, 30);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 30);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Category Id";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.MistyRose;
             this.label8.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.LightCoral;
-            this.label8.Location = new System.Drawing.Point(52, 255);
+            this.label8.Location = new System.Drawing.Point(52, 277);
             this.label8.MinimumSize = new System.Drawing.Size(40, 30);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 30);
@@ -331,53 +312,36 @@
             this.label8.Text = "Description";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // producttable
-            // 
-            this.producttable.AllowUserToResizeColumns = false;
-            this.producttable.AllowUserToResizeRows = false;
-            this.producttable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.producttable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.producttable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.producttable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.producttable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.producttable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.producttable.Location = new System.Drawing.Point(529, 130);
-            this.producttable.Name = "producttable";
-            this.producttable.Size = new System.Drawing.Size(440, 166);
-            this.producttable.TabIndex = 30;
-            this.producttable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.MistyRose;
             this.label9.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.LightCoral;
-            this.label9.Location = new System.Drawing.Point(312, 25);
+            this.label9.Location = new System.Drawing.Point(312, 37);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(164, 31);
             this.label9.TabIndex = 31;
             this.label9.Text = "Product Table";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // categorytable
+            // categorytableview
             // 
-            this.categorytable.AllowUserToResizeColumns = false;
-            this.categorytable.AllowUserToResizeRows = false;
-            this.categorytable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.categorytableview.AllowUserToResizeColumns = false;
+            this.categorytableview.AllowUserToResizeRows = false;
+            this.categorytableview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.categorytable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.categorytable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.categorytable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.categorytable.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.categorytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categorytable.Location = new System.Drawing.Point(415, 430);
-            this.categorytable.Name = "categorytable";
-            this.categorytable.Size = new System.Drawing.Size(252, 214);
-            this.categorytable.TabIndex = 32;
+            this.categorytableview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.categorytableview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.categorytableview.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.categorytableview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.categorytableview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.categorytableview.Location = new System.Drawing.Point(415, 430);
+            this.categorytableview.Name = "categorytableview";
+            this.categorytableview.Size = new System.Drawing.Size(252, 214);
+            this.categorytableview.TabIndex = 32;
+            this.categorytableview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.categorytableview_CellContentClick);
             // 
             // label10
             // 
@@ -410,6 +374,42 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(206, 669);
             this.panel2.TabIndex = 34;
+            // 
+            // logoutbtn
+            // 
+            this.logoutbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logoutbtn.Location = new System.Drawing.Point(0, 630);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(206, 39);
+            this.logoutbtn.TabIndex = 45;
+            this.logoutbtn.TabStop = false;
+            this.logoutbtn.Text = "Logout";
+            this.logoutbtn.UseVisualStyleBackColor = false;
+            // 
+            // transactionbtn
+            // 
+            this.transactionbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.transactionbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.transactionbtn.FlatAppearance.BorderSize = 0;
+            this.transactionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transactionbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transactionbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.transactionbtn.Location = new System.Drawing.Point(0, 493);
+            this.transactionbtn.Name = "transactionbtn";
+            this.transactionbtn.Size = new System.Drawing.Size(206, 45);
+            this.transactionbtn.TabIndex = 44;
+            this.transactionbtn.Text = "Transactions";
+            this.transactionbtn.UseVisualStyleBackColor = false;
+            this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
             // 
             // inventorybtn
             // 
@@ -497,114 +497,106 @@
             this.label2.Text = "Admin";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // flowLayoutPanel2
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel2.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
+            this.flowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(178, 168);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // productnameinput
+            // 
+            this.productnameinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(347, 99);
-            this.textBox1.MinimumSize = new System.Drawing.Size(150, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 26);
-            this.textBox1.TabIndex = 35;
+            this.productnameinput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productnameinput.Location = new System.Drawing.Point(136, 101);
+            this.productnameinput.MinimumSize = new System.Drawing.Size(150, 30);
+            this.productnameinput.Name = "productnameinput";
+            this.productnameinput.Size = new System.Drawing.Size(150, 26);
+            this.productnameinput.TabIndex = 35;
+            this.productnameinput.TextChanged += new System.EventHandler(this.productnameinput_TextChanged);
             // 
-            // textBox2
+            // priceinput
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.priceinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(347, 140);
-            this.textBox2.MinimumSize = new System.Drawing.Size(150, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 26);
-            this.textBox2.TabIndex = 36;
+            this.priceinput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceinput.Location = new System.Drawing.Point(136, 182);
+            this.priceinput.MinimumSize = new System.Drawing.Size(150, 30);
+            this.priceinput.Name = "priceinput";
+            this.priceinput.Size = new System.Drawing.Size(150, 26);
+            this.priceinput.TabIndex = 37;
+            this.priceinput.TextChanged += new System.EventHandler(this.priceinput_TextChanged);
             // 
-            // textBox3
+            // descriptioninput
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.descriptioninput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(347, 230);
-            this.textBox3.MinimumSize = new System.Drawing.Size(150, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 26);
-            this.textBox3.TabIndex = 37;
+            this.descriptioninput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptioninput.Location = new System.Drawing.Point(136, 262);
+            this.descriptioninput.MinimumSize = new System.Drawing.Size(150, 60);
+            this.descriptioninput.Name = "descriptioninput";
+            this.descriptioninput.Size = new System.Drawing.Size(150, 60);
+            this.descriptioninput.TabIndex = 38;
+            this.descriptioninput.TextChanged += new System.EventHandler(this.descriptioninput_TextChanged);
             // 
-            // textBox4
+            // addbproductbtn
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.addbproductbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(347, 271);
-            this.textBox4.MinimumSize = new System.Drawing.Size(150, 60);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 26);
-            this.textBox4.TabIndex = 38;
+            this.addbproductbtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.addbproductbtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.addbproductbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addbproductbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addbproductbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.addbproductbtn.Location = new System.Drawing.Point(318, 290);
+            this.addbproductbtn.Name = "addbproductbtn";
+            this.addbproductbtn.Size = new System.Drawing.Size(103, 32);
+            this.addbproductbtn.TabIndex = 41;
+            this.addbproductbtn.Text = "Add";
+            this.addbproductbtn.UseVisualStyleBackColor = false;
+            this.addbproductbtn.Click += new System.EventHandler(this.addbproductbtn_Click);
             // 
-            // textBox6
+            // updateproductsbtn
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.updateproductsbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(347, 189);
-            this.textBox6.MinimumSize = new System.Drawing.Size(150, 30);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(150, 26);
-            this.textBox6.TabIndex = 40;
+            this.updateproductsbtn.BackColor = System.Drawing.Color.DarkKhaki;
+            this.updateproductsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updateproductsbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateproductsbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.updateproductsbtn.Location = new System.Drawing.Point(427, 290);
+            this.updateproductsbtn.Name = "updateproductsbtn";
+            this.updateproductsbtn.Size = new System.Drawing.Size(103, 32);
+            this.updateproductsbtn.TabIndex = 42;
+            this.updateproductsbtn.Text = "Update";
+            this.updateproductsbtn.UseVisualStyleBackColor = false;
+            this.updateproductsbtn.Click += new System.EventHandler(this.updateproductsbtn_Click);
             // 
-            // addbtn
+            // deleteproductsbtn
             // 
-            this.addbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.deleteproductsbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.addbtn.BackColor = System.Drawing.Color.LimeGreen;
-            this.addbtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.addbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.addbtn.Location = new System.Drawing.Point(318, 290);
-            this.addbtn.Name = "addbtn";
-            this.addbtn.Size = new System.Drawing.Size(138, 42);
-            this.addbtn.TabIndex = 41;
-            this.addbtn.Text = "Add";
-            this.addbtn.UseVisualStyleBackColor = false;
-            // 
-            // updatebtn
-            // 
-            this.updatebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.updatebtn.BackColor = System.Drawing.Color.DarkKhaki;
-            this.updatebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updatebtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatebtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.updatebtn.Location = new System.Drawing.Point(471, 290);
-            this.updatebtn.Name = "updatebtn";
-            this.updatebtn.Size = new System.Drawing.Size(143, 42);
-            this.updatebtn.TabIndex = 42;
-            this.updatebtn.Text = "Update";
-            this.updatebtn.UseVisualStyleBackColor = false;
-            // 
-            // deletebtn
-            // 
-            this.deletebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.deletebtn.BackColor = System.Drawing.Color.IndianRed;
-            this.deletebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deletebtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deletebtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deletebtn.Location = new System.Drawing.Point(620, 290);
-            this.deletebtn.Name = "deletebtn";
-            this.deletebtn.Size = new System.Drawing.Size(138, 42);
-            this.deletebtn.TabIndex = 43;
-            this.deletebtn.Text = "Delete";
-            this.deletebtn.UseVisualStyleBackColor = false;
+            this.deleteproductsbtn.BackColor = System.Drawing.Color.IndianRed;
+            this.deleteproductsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteproductsbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteproductsbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.deleteproductsbtn.Location = new System.Drawing.Point(645, 290);
+            this.deleteproductsbtn.Name = "deleteproductsbtn";
+            this.deleteproductsbtn.Size = new System.Drawing.Size(103, 32);
+            this.deleteproductsbtn.TabIndex = 43;
+            this.deleteproductsbtn.Text = "Delete";
+            this.deleteproductsbtn.UseVisualStyleBackColor = false;
+            this.deleteproductsbtn.Click += new System.EventHandler(this.deleteproductsbtn_Click);
             // 
             // panel3
             // 
@@ -612,21 +604,74 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.MistyRose;
+            this.panel3.Controls.Add(this.clearproductbtn);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.stockquantityinput);
+            this.panel3.Controls.Add(this.producttableview);
+            this.panel3.Controls.Add(this.vate);
+            this.panel3.Controls.Add(this.categoryidproductinput);
             this.panel3.Controls.Add(this.productsearch);
             this.panel3.Controls.Add(this.exportexcelbtn);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.addbtn);
-            this.panel3.Controls.Add(this.updatebtn);
-            this.panel3.Controls.Add(this.deletebtn);
+            this.panel3.Controls.Add(this.addbproductbtn);
+            this.panel3.Controls.Add(this.updateproductsbtn);
+            this.panel3.Controls.Add(this.deleteproductsbtn);
+            this.panel3.Controls.Add(this.productnameinput);
+            this.panel3.Controls.Add(this.descriptioninput);
+            this.panel3.Controls.Add(this.priceinput);
             this.panel3.Location = new System.Drawing.Point(211, 12);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(770, 360);
             this.panel3.TabIndex = 44;
+            // 
+            // producttableview
+            // 
+            this.producttableview.AllowUserToResizeColumns = false;
+            this.producttableview.AllowUserToResizeRows = false;
+            this.producttableview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.producttableview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.producttableview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.producttableview.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.producttableview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.producttableview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.producttableview.Location = new System.Drawing.Point(318, 118);
+            this.producttableview.Name = "producttableview";
+            this.producttableview.Size = new System.Drawing.Size(440, 166);
+            this.producttableview.TabIndex = 61;
+            this.producttableview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.producttableview_CellContentClick);
+            // 
+            // vate
+            // 
+            this.vate.AutoSize = true;
+            this.vate.BackColor = System.Drawing.Color.MistyRose;
+            this.vate.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vate.ForeColor = System.Drawing.Color.LightCoral;
+            this.vate.Location = new System.Drawing.Point(52, 136);
+            this.vate.MinimumSize = new System.Drawing.Size(40, 30);
+            this.vate.Name = "vate";
+            this.vate.Size = new System.Drawing.Size(81, 30);
+            this.vate.TabIndex = 60;
+            this.vate.Text = "Category Id";
+            this.vate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // categoryidproductinput
+            // 
+            this.categoryidproductinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.categoryidproductinput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryidproductinput.Location = new System.Drawing.Point(136, 138);
+            this.categoryidproductinput.MinimumSize = new System.Drawing.Size(150, 30);
+            this.categoryidproductinput.Name = "categoryidproductinput";
+            this.categoryidproductinput.Size = new System.Drawing.Size(150, 26);
+            this.categoryidproductinput.TabIndex = 59;
+            this.categoryidproductinput.TextChanged += new System.EventHandler(this.categoryidproductinput_TextChanged);
             // 
             // productsearch
             // 
@@ -641,6 +686,7 @@
             this.productsearch.Size = new System.Drawing.Size(203, 25);
             this.productsearch.TabIndex = 54;
             this.productsearch.Text = "  Search";
+            this.productsearch.TextChanged += new System.EventHandler(this.productsearch_TextChanged);
             // 
             // exportexcelbtn
             // 
@@ -659,30 +705,31 @@
             this.exportexcelbtn.TabIndex = 58;
             this.exportexcelbtn.Text = "Export to MS Excel";
             this.exportexcelbtn.UseVisualStyleBackColor = false;
+            this.exportexcelbtn.Click += new System.EventHandler(this.exportexcelbtn_Click);
             // 
-            // textBox5
+            // categorynameinput
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.categorynameinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(796, 461);
-            this.textBox5.MinimumSize = new System.Drawing.Size(150, 30);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 26);
-            this.textBox5.TabIndex = 45;
+            this.categorynameinput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categorynameinput.Location = new System.Drawing.Point(796, 461);
+            this.categorynameinput.MinimumSize = new System.Drawing.Size(150, 30);
+            this.categorynameinput.Name = "categorynameinput";
+            this.categorynameinput.Size = new System.Drawing.Size(150, 26);
+            this.categorynameinput.TabIndex = 45;
             // 
-            // textBox7
+            // categoryidinput
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.categoryidinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(796, 510);
-            this.textBox7.MinimumSize = new System.Drawing.Size(150, 30);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 26);
-            this.textBox7.TabIndex = 46;
+            this.categoryidinput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryidinput.Location = new System.Drawing.Point(796, 510);
+            this.categoryidinput.MinimumSize = new System.Drawing.Size(150, 30);
+            this.categoryidinput.Name = "categoryidinput";
+            this.categoryidinput.Size = new System.Drawing.Size(150, 26);
+            this.categoryidinput.TabIndex = 46;
             // 
             // label11
             // 
@@ -743,12 +790,13 @@
             this.addcategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addcategorybtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addcategorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.addcategorybtn.Location = new System.Drawing.Point(704, 553);
+            this.addcategorybtn.Location = new System.Drawing.Point(731, 563);
             this.addcategorybtn.Name = "addcategorybtn";
-            this.addcategorybtn.Size = new System.Drawing.Size(118, 42);
+            this.addcategorybtn.Size = new System.Drawing.Size(103, 32);
             this.addcategorybtn.TabIndex = 50;
             this.addcategorybtn.Text = "Add";
             this.addcategorybtn.UseVisualStyleBackColor = false;
+            this.addcategorybtn.Click += new System.EventHandler(this.addcategorybtn_Click);
             // 
             // updatecategorybtn
             // 
@@ -759,12 +807,13 @@
             this.updatecategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updatecategorybtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updatecategorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.updatecategorybtn.Location = new System.Drawing.Point(828, 553);
+            this.updatecategorybtn.Location = new System.Drawing.Point(843, 562);
             this.updatecategorybtn.Name = "updatecategorybtn";
-            this.updatecategorybtn.Size = new System.Drawing.Size(118, 42);
+            this.updatecategorybtn.Size = new System.Drawing.Size(103, 32);
             this.updatecategorybtn.TabIndex = 51;
             this.updatecategorybtn.Text = "Update";
             this.updatecategorybtn.UseVisualStyleBackColor = false;
+            this.updatecategorybtn.Click += new System.EventHandler(this.updatecategorybtn_Click);
             // 
             // deletecategorybtn
             // 
@@ -775,48 +824,13 @@
             this.deletecategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deletecategorybtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletecategorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deletecategorybtn.Location = new System.Drawing.Point(757, 602);
+            this.deletecategorybtn.Location = new System.Drawing.Point(843, 600);
             this.deletecategorybtn.Name = "deletecategorybtn";
-            this.deletecategorybtn.Size = new System.Drawing.Size(138, 42);
+            this.deletecategorybtn.Size = new System.Drawing.Size(103, 32);
             this.deletecategorybtn.TabIndex = 52;
             this.deletecategorybtn.Text = "Delete";
             this.deletecategorybtn.UseVisualStyleBackColor = false;
-            // 
-            // transactionbtn
-            // 
-            this.transactionbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.transactionbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.transactionbtn.FlatAppearance.BorderSize = 0;
-            this.transactionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.transactionbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transactionbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.transactionbtn.Location = new System.Drawing.Point(0, 493);
-            this.transactionbtn.Name = "transactionbtn";
-            this.transactionbtn.Size = new System.Drawing.Size(206, 45);
-            this.transactionbtn.TabIndex = 44;
-            this.transactionbtn.Text = "Transactions";
-            this.transactionbtn.UseVisualStyleBackColor = false;
-            this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
-            // 
-            // logoutbtn
-            // 
-            this.logoutbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.logoutbtn.Location = new System.Drawing.Point(0, 630);
-            this.logoutbtn.Name = "logoutbtn";
-            this.logoutbtn.Size = new System.Drawing.Size(206, 39);
-            this.logoutbtn.TabIndex = 45;
-            this.logoutbtn.TabStop = false;
-            this.logoutbtn.Text = "Logout";
-            this.logoutbtn.UseVisualStyleBackColor = false;
+            this.deletecategorybtn.Click += new System.EventHandler(this.deletecategorybtn_Click);
             // 
             // panel4
             // 
@@ -830,25 +844,60 @@
             this.panel4.Size = new System.Drawing.Size(186, 214);
             this.panel4.TabIndex = 53;
             // 
-            // flowLayoutPanel2
+            // stockquantityinput
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel2.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
-            this.flowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(178, 168);
-            this.flowLayoutPanel2.TabIndex = 1;
+            this.stockquantityinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.stockquantityinput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stockquantityinput.Location = new System.Drawing.Point(136, 218);
+            this.stockquantityinput.MinimumSize = new System.Drawing.Size(150, 30);
+            this.stockquantityinput.Name = "stockquantityinput";
+            this.stockquantityinput.Size = new System.Drawing.Size(150, 30);
+            this.stockquantityinput.TabIndex = 62;
+            this.stockquantityinput.TextChanged += new System.EventHandler(this.stockquantityinput_TextChanged);
             // 
-            // flowLayoutPanel1
+            // label5
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.MistyRose;
+            this.label5.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.LightCoral;
+            this.label5.Location = new System.Drawing.Point(31, 218);
+            this.label5.MinimumSize = new System.Drawing.Size(40, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(99, 30);
+            this.label5.TabIndex = 63;
+            this.label5.Text = "Stock Quantity";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // clearproductbtn
+            // 
+            this.clearproductbtn.BackColor = System.Drawing.Color.Orchid;
+            this.clearproductbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearproductbtn.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearproductbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.clearproductbtn.Location = new System.Drawing.Point(536, 290);
+            this.clearproductbtn.Name = "clearproductbtn";
+            this.clearproductbtn.Size = new System.Drawing.Size(103, 32);
+            this.clearproductbtn.TabIndex = 61;
+            this.clearproductbtn.Text = "Clear";
+            this.clearproductbtn.UseVisualStyleBackColor = false;
+            this.clearproductbtn.Click += new System.EventHandler(this.clearproductbtn_Click);
+            // 
+            // clearcategorybtn
+            // 
+            this.clearcategorybtn.BackColor = System.Drawing.Color.Orchid;
+            this.clearcategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearcategorybtn.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearcategorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.clearcategorybtn.Location = new System.Drawing.Point(731, 601);
+            this.clearcategorybtn.Name = "clearcategorybtn";
+            this.clearcategorybtn.Size = new System.Drawing.Size(103, 32);
+            this.clearcategorybtn.TabIndex = 64;
+            this.clearcategorybtn.Text = "Clear";
+            this.clearcategorybtn.UseVisualStyleBackColor = false;
+            this.clearcategorybtn.Click += new System.EventHandler(this.clearcategorybtn_Click);
             // 
             // Form3
             // 
@@ -856,7 +905,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(993, 668);
-            this.Controls.Add(this.categorytable);
+            this.Controls.Add(this.clearcategorybtn);
+            this.Controls.Add(this.categorytableview);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.deletecategorybtn);
             this.Controls.Add(this.updatecategorybtn);
@@ -864,17 +914,10 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.categoryidinput);
+            this.Controls.Add(this.categorynameinput);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.producttable);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.MaximizeBox = false;
@@ -885,12 +928,12 @@
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.producttable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categorytable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categorytableview)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.producttableview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -913,12 +956,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView producttable;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridView categorytable;
+        private System.Windows.Forms.DataGridView categorytableview;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button orderitemsbtn;
@@ -927,18 +967,16 @@
         private System.Windows.Forms.Button dashbtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox productnameinput;
+        private System.Windows.Forms.TextBox priceinput;
+        private System.Windows.Forms.TextBox descriptioninput;
         private System.Windows.Forms.Button inventorybtn;
-        private System.Windows.Forms.Button addbtn;
-        private System.Windows.Forms.Button updatebtn;
-        private System.Windows.Forms.Button deletebtn;
+        private System.Windows.Forms.Button addbproductbtn;
+        private System.Windows.Forms.Button updateproductsbtn;
+        private System.Windows.Forms.Button deleteproductsbtn;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox categorynameinput;
+        private System.Windows.Forms.TextBox categoryidinput;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -950,5 +988,12 @@
         private System.Windows.Forms.TextBox productsearch;
         private System.Windows.Forms.Button transactionbtn;
         private System.Windows.Forms.Button logoutbtn;
+        private System.Windows.Forms.Label vate;
+        private System.Windows.Forms.TextBox categoryidproductinput;
+        private System.Windows.Forms.DataGridView producttableview;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox stockquantityinput;
+        private System.Windows.Forms.Button clearproductbtn;
+        private System.Windows.Forms.Button clearcategorybtn;
     }
 }

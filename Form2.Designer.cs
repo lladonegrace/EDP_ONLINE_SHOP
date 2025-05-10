@@ -48,13 +48,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.nameinput = new System.Windows.Forms.TextBox();
-            this.updatecategorybtn = new System.Windows.Forms.Button();
             this.addcategorybtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.searchinput = new System.Windows.Forms.TextBox();
             this.exporttomsexcelbtn = new System.Windows.Forms.Button();
             this.phoneinput = new System.Windows.Forms.TextBox();
             this.deletebtn = new System.Windows.Forms.Button();
+            this.updatebtn = new System.Windows.Forms.Button();
+            this.clearinput = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.customertabledataview)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -344,23 +345,6 @@
             this.nameinput.TabIndex = 27;
             this.nameinput.TextChanged += new System.EventHandler(this.nameinput_TextChanged);
             // 
-            // updatecategorybtn
-            // 
-            this.updatecategorybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.updatecategorybtn.BackColor = System.Drawing.Color.DarkKhaki;
-            this.updatecategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updatecategorybtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatecategorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.updatecategorybtn.Location = new System.Drawing.Point(520, 227);
-            this.updatecategorybtn.Name = "updatecategorybtn";
-            this.updatecategorybtn.Size = new System.Drawing.Size(180, 42);
-            this.updatecategorybtn.TabIndex = 54;
-            this.updatecategorybtn.Text = "Update";
-            this.updatecategorybtn.UseVisualStyleBackColor = false;
-            this.updatecategorybtn.Click += new System.EventHandler(this.updatecategorybtn_Click);
-            // 
             // addcategorybtn
             // 
             this.addcategorybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -368,12 +352,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.addcategorybtn.BackColor = System.Drawing.Color.LimeGreen;
             this.addcategorybtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.addcategorybtn.FlatAppearance.BorderSize = 0;
             this.addcategorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addcategorybtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addcategorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.addcategorybtn.Location = new System.Drawing.Point(320, 227);
+            this.addcategorybtn.Location = new System.Drawing.Point(320, 226);
             this.addcategorybtn.Name = "addcategorybtn";
-            this.addcategorybtn.Size = new System.Drawing.Size(180, 42);
+            this.addcategorybtn.Size = new System.Drawing.Size(143, 42);
             this.addcategorybtn.TabIndex = 53;
             this.addcategorybtn.Text = "Add";
             this.addcategorybtn.UseVisualStyleBackColor = false;
@@ -407,6 +392,7 @@
             this.searchinput.Size = new System.Drawing.Size(223, 25);
             this.searchinput.TabIndex = 58;
             this.searchinput.Text = "  Search";
+            this.searchinput.Visible = false;
             this.searchinput.TextChanged += new System.EventHandler(this.searchinput_TextChanged);
             // 
             // exporttomsexcelbtn
@@ -449,16 +435,51 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.deletebtn.BackColor = System.Drawing.Color.IndianRed;
+            this.deletebtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.deletebtn.FlatAppearance.BorderSize = 0;
             this.deletebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deletebtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletebtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deletebtn.Location = new System.Drawing.Point(717, 227);
+            this.deletebtn.Location = new System.Drawing.Point(767, 226);
             this.deletebtn.Name = "deletebtn";
-            this.deletebtn.Size = new System.Drawing.Size(180, 42);
+            this.deletebtn.Size = new System.Drawing.Size(143, 42);
             this.deletebtn.TabIndex = 58;
             this.deletebtn.Text = "Delete";
             this.deletebtn.UseVisualStyleBackColor = false;
             this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
+            // 
+            // updatebtn
+            // 
+            this.updatebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.updatebtn.BackColor = System.Drawing.Color.DarkKhaki;
+            this.updatebtn.FlatAppearance.BorderSize = 0;
+            this.updatebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updatebtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatebtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.updatebtn.Location = new System.Drawing.Point(469, 226);
+            this.updatebtn.Name = "updatebtn";
+            this.updatebtn.Size = new System.Drawing.Size(143, 42);
+            this.updatebtn.TabIndex = 59;
+            this.updatebtn.Text = "Update";
+            this.updatebtn.UseVisualStyleBackColor = false;
+            this.updatebtn.Click += new System.EventHandler(this.updatebtn_Click);
+            // 
+            // clearinput
+            // 
+            this.clearinput.BackColor = System.Drawing.Color.Orchid;
+            this.clearinput.FlatAppearance.BorderSize = 0;
+            this.clearinput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearinput.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearinput.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.clearinput.Location = new System.Drawing.Point(618, 226);
+            this.clearinput.Name = "clearinput";
+            this.clearinput.Size = new System.Drawing.Size(143, 42);
+            this.clearinput.TabIndex = 60;
+            this.clearinput.Text = "Clear";
+            this.clearinput.UseVisualStyleBackColor = false;
+            this.clearinput.Click += new System.EventHandler(this.clearinput_Click);
             // 
             // Form2
             // 
@@ -466,9 +487,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(993, 668);
+            this.Controls.Add(this.clearinput);
+            this.Controls.Add(this.updatebtn);
             this.Controls.Add(this.deletebtn);
             this.Controls.Add(this.phoneinput);
-            this.Controls.Add(this.updatecategorybtn);
             this.Controls.Add(this.addcategorybtn);
             this.Controls.Add(this.nameinput);
             this.Controls.Add(this.panel1);
@@ -510,7 +532,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.TextBox nameinput;
-        private System.Windows.Forms.Button updatecategorybtn;
         private System.Windows.Forms.Button addcategorybtn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button exporttomsexcelbtn;
@@ -524,5 +545,7 @@
         private System.Windows.Forms.TextBox searchinput;
         private System.Windows.Forms.TextBox phoneinput;
         private System.Windows.Forms.Button deletebtn;
+        private System.Windows.Forms.Button updatebtn;
+        private System.Windows.Forms.Button clearinput;
     }
 }

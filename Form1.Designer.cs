@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.transactionbtn = new System.Windows.Forms.Button();
             this.logoutbtn = new System.Windows.Forms.Button();
             this.inventorybtn = new System.Windows.Forms.Button();
             this.orderitemsbtn = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             this.customerbtn = new System.Windows.Forms.Button();
             this.dashboardbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -48,9 +50,7 @@
             this.customerspendbtn = new System.Windows.Forms.Button();
             this.orderinfobtn = new System.Windows.Forms.Button();
             this.customerinfobtn = new System.Windows.Forms.Button();
-            this.transactionbtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.todaysorderview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersummary)).BeginInit();
@@ -76,6 +76,24 @@
             this.panel1.Size = new System.Drawing.Size(206, 669);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // transactionbtn
+            // 
+            this.transactionbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.transactionbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.transactionbtn.FlatAppearance.BorderSize = 0;
+            this.transactionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transactionbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transactionbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.transactionbtn.Location = new System.Drawing.Point(0, 493);
+            this.transactionbtn.Name = "transactionbtn";
+            this.transactionbtn.Size = new System.Drawing.Size(206, 45);
+            this.transactionbtn.TabIndex = 30;
+            this.transactionbtn.Text = "Transactions";
+            this.transactionbtn.UseVisualStyleBackColor = false;
+            this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
             // 
             // logoutbtn
             // 
@@ -200,6 +218,19 @@
             this.label1.Text = "Admin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -317,6 +348,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button12.AutoSize = true;
             this.button12.BackColor = System.Drawing.Color.LightCoral;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.SystemColors.Window;
             this.button12.Location = new System.Drawing.Point(396, 90);
@@ -334,6 +366,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button11.AutoSize = true;
             this.button11.BackColor = System.Drawing.Color.LightCoral;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.SystemColors.Window;
             this.button11.Location = new System.Drawing.Point(539, 90);
@@ -351,6 +384,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customerspendbtn.AutoSize = true;
             this.customerspendbtn.BackColor = System.Drawing.Color.LightCoral;
+            this.customerspendbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customerspendbtn.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerspendbtn.ForeColor = System.Drawing.SystemColors.Window;
             this.customerspendbtn.Location = new System.Drawing.Point(825, 90);
@@ -368,6 +402,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.orderinfobtn.AutoSize = true;
             this.orderinfobtn.BackColor = System.Drawing.Color.LightCoral;
+            this.orderinfobtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.orderinfobtn.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderinfobtn.ForeColor = System.Drawing.SystemColors.Window;
             this.orderinfobtn.Location = new System.Drawing.Point(682, 90);
@@ -385,6 +420,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customerinfobtn.AutoSize = true;
             this.customerinfobtn.BackColor = System.Drawing.Color.LightCoral;
+            this.customerinfobtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customerinfobtn.Font = new System.Drawing.Font("Tw Cen MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customerinfobtn.ForeColor = System.Drawing.SystemColors.Window;
             this.customerinfobtn.Location = new System.Drawing.Point(253, 90);
@@ -394,24 +430,6 @@
             this.customerinfobtn.Text = "Customer Info";
             this.customerinfobtn.UseVisualStyleBackColor = false;
             this.customerinfobtn.Click += new System.EventHandler(this.customerinfobtn_Click);
-            // 
-            // transactionbtn
-            // 
-            this.transactionbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.transactionbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.transactionbtn.FlatAppearance.BorderSize = 0;
-            this.transactionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.transactionbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transactionbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.transactionbtn.Location = new System.Drawing.Point(0, 493);
-            this.transactionbtn.Name = "transactionbtn";
-            this.transactionbtn.Size = new System.Drawing.Size(206, 45);
-            this.transactionbtn.TabIndex = 30;
-            this.transactionbtn.Text = "Transactions";
-            this.transactionbtn.UseVisualStyleBackColor = false;
-            this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
             // 
             // panel2
             // 
@@ -424,19 +442,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(342, 206);
             this.panel2.TabIndex = 17;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
-            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // Form1
             // 

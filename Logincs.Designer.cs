@@ -45,7 +45,7 @@
             this.usernamebox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.usernamebox.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernamebox.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernamebox.Location = new System.Drawing.Point(221, 170);
             this.usernamebox.Name = "usernamebox";
             this.usernamebox.Size = new System.Drawing.Size(326, 37);
@@ -58,11 +58,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.usernamelabel.AutoSize = true;
-            this.usernamelabel.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernamelabel.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernamelabel.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.usernamelabel.Location = new System.Drawing.Point(91, 174);
             this.usernamelabel.Name = "usernamelabel";
-            this.usernamelabel.Size = new System.Drawing.Size(124, 32);
+            this.usernamelabel.Size = new System.Drawing.Size(133, 31);
             this.usernamelabel.TabIndex = 2;
             this.usernamelabel.Text = "Username:";
             // 
@@ -72,11 +72,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.passlabel.AutoSize = true;
-            this.passlabel.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passlabel.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passlabel.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.passlabel.Location = new System.Drawing.Point(91, 233);
             this.passlabel.Name = "passlabel";
-            this.passlabel.Size = new System.Drawing.Size(119, 32);
+            this.passlabel.Size = new System.Drawing.Size(130, 31);
             this.passlabel.TabIndex = 3;
             this.passlabel.Text = "Password:";
             // 
@@ -85,11 +85,11 @@
             this.passwordbox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.passwordbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordbox.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordbox.Location = new System.Drawing.Point(221, 233);
             this.passwordbox.Name = "passwordbox";
             this.passwordbox.PasswordChar = '*';
-            this.passwordbox.Size = new System.Drawing.Size(326, 38);
+            this.passwordbox.Size = new System.Drawing.Size(326, 37);
             this.passwordbox.TabIndex = 4;
             this.passwordbox.TextChanged += new System.EventHandler(this.passwordbox_TextChanged);
             // 
@@ -157,22 +157,22 @@
             // labelshop
             // 
             this.labelshop.AutoSize = true;
-            this.labelshop.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelshop.Font = new System.Drawing.Font("Tw Cen MT", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelshop.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.labelshop.Location = new System.Drawing.Point(155, 78);
             this.labelshop.Name = "labelshop";
-            this.labelshop.Size = new System.Drawing.Size(392, 41);
+            this.labelshop.Size = new System.Drawing.Size(429, 40);
             this.labelshop.TabIndex = 9;
             this.labelshop.Text = "Enter your Login Credentials";
             // 
             // createaccbtn
             // 
             this.createaccbtn.AutoSize = true;
-            this.createaccbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createaccbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createaccbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.createaccbtn.Location = new System.Drawing.Point(329, 410);
+            this.createaccbtn.Location = new System.Drawing.Point(322, 404);
             this.createaccbtn.Name = "createaccbtn";
-            this.createaccbtn.Size = new System.Drawing.Size(124, 13);
+            this.createaccbtn.Size = new System.Drawing.Size(139, 19);
             this.createaccbtn.TabIndex = 10;
             this.createaccbtn.Text = "Create New Account";
             this.createaccbtn.Click += new System.EventHandler(this.createaccbtn_Click);

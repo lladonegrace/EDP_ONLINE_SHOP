@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Excel = Microsoft.Office.Interop.Excel;
+
 
 namespace EDP_ONLINE_SHOP
 {
@@ -20,6 +22,10 @@ namespace EDP_ONLINE_SHOP
         private void Form2_Load(object sender, EventArgs e)
         {
             getData();
+            customertabledataview.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            customertabledataview.MultiSelect = false;
+            customertabledataview.ReadOnly = true; // Optional: prevent editing directly in grid
+            customertabledataview.AllowUserToAddRows = false;
         }
         public void getData()
         {
@@ -127,66 +133,7 @@ namespace EDP_ONLINE_SHOP
             }
         }
 
-
-        private void updatecategorybtn_Click(object sender, EventArgs e)
-        {
-            if (customertabledataview.SelectedRows.Count == 0)
-            {
-                MessageBox.Show("Please select a customer to update.");
-                return;
-            }
-
-            // Get the selected row and the original values
-            DataGridViewRow selectedRow = customertabledataview.SelectedRows[0];
-            string originalName = selectedRow.Cells["name"].Value.ToString();
-            string originalEmail = selectedRow.Cells["email"].Value.ToString();
-
-            // Get the new values from the input fields
-            string newName = nameinput.Text.Trim();
-            string newEmail = inputemail.Text.Trim();
-            string newAddress = inputaddress.Text.Trim();
-            string newPhone = phoneinput.Text.Trim();
-
-            // Validate the input fields
-            if (string.IsNullOrWhiteSpace(newName) || string.IsNullOrWhiteSpace(newEmail))
-            {
-                MessageBox.Show("Name and Email cannot be empty.");
-                return;
-            }
-
-            // Database connection string
-            string conString = "server=localhost;uid=root;pwd=#GracE_121203;database=online_shop;";
-            using (MySqlConnection con = new MySqlConnection(conString))
-            {
-                con.Open();
-
-                // Update query
-                string query = @"UPDATE customers 
-                         SET name = @newName, email = @newEmail, address = @newAddress, phone = @newPhone 
-                         WHERE name = @originalName AND email = @originalEmail";
-
-                // Prepare the SQL command
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@newName", newName);
-                cmd.Parameters.AddWithValue("@newEmail", newEmail);
-                cmd.Parameters.AddWithValue("@newAddress", newAddress);
-                cmd.Parameters.AddWithValue("@newPhone", newPhone);
-                cmd.Parameters.AddWithValue("@originalName", originalName);
-                cmd.Parameters.AddWithValue("@originalEmail", originalEmail);
-
-                // Execute the update
-                int affectedRows = cmd.ExecuteNonQuery();
-                if (affectedRows > 0)
-                {
-                    MessageBox.Show("Customer updated successfully!");
-                    getData(); // Refresh the data grid view with updated info
-                }
-                else
-                {
-                    MessageBox.Show("Update failed. Customer not found.");
-                }
-            }
-        }
+        
 
 
         private void deletebtn_Click(object sender, EventArgs e)
@@ -235,16 +182,74 @@ namespace EDP_ONLINE_SHOP
         {
 
         }
-
         private void searchinput_TextChanged(object sender, EventArgs e)
         {
+            string searchTerm = searchinput.Text.Trim();
 
+            if (string.IsNullOrEmpty(searchTerm))
+            {
+                getData(); // If search box is empty, load all data
+                return;
+            }
+
+            // SQL query to search for matching customers by name or email
+            string conString = "server=localhost;uid=root;pwd=#GracE_121203;database=online_shop;";
+            using (MySqlConnection con = new MySqlConnection(conString))
+            {
+                con.Open();
+                string query = "SELECT * FROM customers WHERE name LIKE @searchTerm OR email LIKE @searchTerm";
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%"); // % allows for partial matches
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Load(reader);
+                customertabledataview.DataSource = dt;
+
+                reader.Close();
+                con.Close();
+            }
         }
+
 
         private void exporttomsexcelbtn_Click(object sender, EventArgs e)
         {
-
+             try
+    {
+        if (customertabledataview.Rows.Count == 0)
+        {
+            MessageBox.Show("No data to export.");
+            return;
         }
+
+        Excel.Application excelApp = new Excel.Application();
+        Excel.Workbook workbook = excelApp.Workbooks.Add(Type.Missing);
+        Excel.Worksheet worksheet = (Excel.Worksheet)workbook.Sheets["Sheet1"];
+        worksheet = workbook.Sheets[1];
+        worksheet.Name = "Customers";
+
+        // Add header
+        for (int i = 1; i <= customertabledataview.Columns.Count; i++)
+        {
+            worksheet.Cells[1, i] = customertabledataview.Columns[i - 1].HeaderText;
+        }
+
+        // Add rows
+        for (int i = 0; i < customertabledataview.Rows.Count; i++)
+        {
+            for (int j = 0; j < customertabledataview.Columns.Count; j++)
+            {
+                worksheet.Cells[i + 2, j + 1] = customertabledataview.Rows[i].Cells[j].Value?.ToString();
+            }
+        }
+
+        excelApp.Visible = true; // Show Excel window
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show("Error exporting to Excel: " + ex.Message);
+    }
+        } 
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
@@ -269,11 +274,68 @@ namespace EDP_ONLINE_SHOP
             }
         }
 
-        private void deletecategorybtn_Click(object sender, EventArgs e)
+        private void updatebtn_Click(object sender, EventArgs e)
         {
+            if (customertabledataview.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a customer to update.");
+                return;
+            }
 
+            // Get selected row
+            DataGridViewRow selectedRow = customertabledataview.SelectedRows[0];
+            string originalName = selectedRow.Cells["name"].Value.ToString(); // original identifier
+            string originalEmail = selectedRow.Cells["email"].Value.ToString(); // original identifier
+
+            // Get updated input values
+            string updatedName = nameinput.Text.Trim();
+            string updatedEmail = inputemail.Text.Trim();
+            string updatedAddress = inputaddress.Text.Trim();
+            string updatedPhone = phoneinput.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(updatedName) || string.IsNullOrWhiteSpace(updatedEmail) || string.IsNullOrWhiteSpace(updatedPhone))
+            {
+                MessageBox.Show("Please fill in required fields (Name, Email, Phone).");
+                return;
+            }
+
+            // Database update
+            string conString = "server=localhost;uid=root;pwd=#GracE_121203;database=online_shop;";
+            using (MySqlConnection con = new MySqlConnection(conString))
+            {
+                con.Open();
+                string query = @"UPDATE customers 
+                         SET name = @updatedName, email = @updatedEmail, address = @updatedAddress, phone = @updatedPhone 
+                         WHERE name = @originalName AND email = @originalEmail";
+
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@updatedName", updatedName);
+                cmd.Parameters.AddWithValue("@updatedEmail", updatedEmail);
+                cmd.Parameters.AddWithValue("@updatedAddress", updatedAddress);
+                cmd.Parameters.AddWithValue("@updatedPhone", updatedPhone);
+                cmd.Parameters.AddWithValue("@originalName", originalName);
+                cmd.Parameters.AddWithValue("@originalEmail", originalEmail);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Customer updated successfully!");
+                    getData(); // Refresh DataGridView
+                }
+                else
+                {
+                    MessageBox.Show("Update failed. Customer not found.");
+                }
+            }
         }
 
-     
+        private void clearinput_Click(object sender, EventArgs e)
+        {
+            nameinput.Text = string.Empty;
+            inputemail.Text = string.Empty;
+            inputaddress.Text = string.Empty;
+            phoneinput.Text = string.Empty;
+        }
+
     }
 }
