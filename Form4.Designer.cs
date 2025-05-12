@@ -29,18 +29,25 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.logoutbtn = new System.Windows.Forms.Button();
+            this.transactionbtn = new System.Windows.Forms.Button();
             this.inventorybtn = new System.Windows.Forms.Button();
             this.orderitemsbtn = new System.Windows.Forms.Button();
             this.productsbtn = new System.Windows.Forms.Button();
             this.customerbtn = new System.Windows.Forms.Button();
             this.dashboardbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.orderitemtable = new System.Windows.Forms.Label();
             this.orderitemview = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.searchinpt = new System.Windows.Forms.TextBox();
+            this.exportexcelbtn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.clearordertbtn = new System.Windows.Forms.Button();
+            this.exporttomsexcelbtn = new System.Windows.Forms.Button();
             this.productsearch = new System.Windows.Forms.TextBox();
             this.deleteorderbtn = new System.Windows.Forms.Button();
             this.updateorderbtn = new System.Windows.Forms.Button();
@@ -54,8 +61,9 @@
             this.ordertable = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.exporttomsexcelpayment = new System.Windows.Forms.Button();
+            this.clearpaymentbtn = new System.Windows.Forms.Button();
+            this.searchpaymentinput = new System.Windows.Forms.TextBox();
             this.deletepaymentbtn = new System.Windows.Forms.Button();
             this.updatepaymentbtn = new System.Windows.Forms.Button();
             this.paymentstatusinput = new System.Windows.Forms.TextBox();
@@ -63,12 +71,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.paymenttable = new System.Windows.Forms.DataGridView();
+            this.paymenttableview = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
-            this.transactionbtn = new System.Windows.Forms.Button();
-            this.logoutbtn = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.orderitemview)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -76,7 +80,7 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ordertable)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.paymenttable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paymenttableview)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -98,6 +102,42 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(206, 669);
             this.panel1.TabIndex = 1;
+            // 
+            // logoutbtn
+            // 
+            this.logoutbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logoutbtn.Location = new System.Drawing.Point(0, 630);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(206, 39);
+            this.logoutbtn.TabIndex = 32;
+            this.logoutbtn.TabStop = false;
+            this.logoutbtn.Text = "Logout";
+            this.logoutbtn.UseVisualStyleBackColor = false;
+            // 
+            // transactionbtn
+            // 
+            this.transactionbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.transactionbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.transactionbtn.FlatAppearance.BorderSize = 0;
+            this.transactionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transactionbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transactionbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.transactionbtn.Location = new System.Drawing.Point(0, 493);
+            this.transactionbtn.Name = "transactionbtn";
+            this.transactionbtn.Size = new System.Drawing.Size(206, 45);
+            this.transactionbtn.TabIndex = 31;
+            this.transactionbtn.Text = "Transactions";
+            this.transactionbtn.UseVisualStyleBackColor = false;
+            this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
             // 
             // inventorybtn
             // 
@@ -185,6 +225,16 @@
             this.label1.Text = "Admin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
             // orderitemtable
             // 
             this.orderitemtable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -211,9 +261,9 @@
             this.orderitemview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.orderitemview.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.orderitemview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.orderitemview.Location = new System.Drawing.Point(97, 306);
+            this.orderitemview.Location = new System.Drawing.Point(97, 332);
             this.orderitemview.Name = "orderitemview";
-            this.orderitemview.Size = new System.Drawing.Size(593, 272);
+            this.orderitemview.Size = new System.Drawing.Size(593, 246);
             this.orderitemview.TabIndex = 12;
             this.orderitemview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.orderitemview_CellContentClick);
             // 
@@ -229,26 +279,75 @@
             this.tabControl1.Location = new System.Drawing.Point(212, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(783, 656);
+            this.tabControl1.Size = new System.Drawing.Size(783, 669);
             this.tabControl1.TabIndex = 17;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.SeaShell;
+            this.tabPage1.Controls.Add(this.searchinpt);
+            this.tabPage1.Controls.Add(this.exportexcelbtn);
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Controls.Add(this.orderitemtable);
             this.tabPage1.Controls.Add(this.orderitemview);
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(775, 624);
+            this.tabPage1.Size = new System.Drawing.Size(775, 637);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Order_items_Table";
+            // 
+            // searchinpt
+            // 
+            this.searchinpt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchinpt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.searchinpt.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchinpt.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.searchinpt.Location = new System.Drawing.Point(97, 301);
+            this.searchinpt.Name = "searchinpt";
+            this.searchinpt.Size = new System.Drawing.Size(203, 25);
+            this.searchinpt.TabIndex = 60;
+            this.searchinpt.Text = "  Search";
+            this.searchinpt.TextChanged += new System.EventHandler(this.searchinpt_TextChanged);
+            // 
+            // exportexcelbtn
+            // 
+            this.exportexcelbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.exportexcelbtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.exportexcelbtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.exportexcelbtn.FlatAppearance.BorderSize = 2;
+            this.exportexcelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exportexcelbtn.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportexcelbtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.exportexcelbtn.Location = new System.Drawing.Point(516, 301);
+            this.exportexcelbtn.Name = "exportexcelbtn";
+            this.exportexcelbtn.Size = new System.Drawing.Size(174, 27);
+            this.exportexcelbtn.TabIndex = 59;
+            this.exportexcelbtn.Text = "Export to MS Excel";
+            this.exportexcelbtn.UseVisualStyleBackColor = false;
+            this.exportexcelbtn.Click += new System.EventHandler(this.exportexcelbtn_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources._294bba2466aff48c4c5c7742e243cd3a;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(29, 22);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(723, 209);
+            this.panel2.TabIndex = 13;
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.MistyRose;
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.clearordertbtn);
+            this.tabPage2.Controls.Add(this.exporttomsexcelbtn);
             this.tabPage2.Controls.Add(this.productsearch);
             this.tabPage2.Controls.Add(this.deleteorderbtn);
             this.tabPage2.Controls.Add(this.updateorderbtn);
@@ -264,27 +363,42 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(775, 624);
+            this.tabPage2.Size = new System.Drawing.Size(775, 637);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Order";
             // 
-            // button1
+            // clearordertbtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.clearordertbtn.BackColor = System.Drawing.Color.Orchid;
+            this.clearordertbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearordertbtn.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearordertbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.clearordertbtn.Location = new System.Drawing.Point(456, 180);
+            this.clearordertbtn.Name = "clearordertbtn";
+            this.clearordertbtn.Size = new System.Drawing.Size(204, 34);
+            this.clearordertbtn.TabIndex = 62;
+            this.clearordertbtn.Text = "Clear";
+            this.clearordertbtn.UseVisualStyleBackColor = false;
+            this.clearordertbtn.Click += new System.EventHandler(this.clearordertbtn_Click);
+            // 
+            // exporttomsexcelbtn
+            // 
+            this.exporttomsexcelbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.button1.Location = new System.Drawing.Point(484, 320);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(209, 31);
-            this.button1.TabIndex = 58;
-            this.button1.Text = "Export to MS Excel";
-            this.button1.UseVisualStyleBackColor = false;
+            this.exporttomsexcelbtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.exporttomsexcelbtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.exporttomsexcelbtn.FlatAppearance.BorderSize = 2;
+            this.exporttomsexcelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exporttomsexcelbtn.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exporttomsexcelbtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.exporttomsexcelbtn.Location = new System.Drawing.Point(519, 325);
+            this.exporttomsexcelbtn.Name = "exporttomsexcelbtn";
+            this.exporttomsexcelbtn.Size = new System.Drawing.Size(174, 27);
+            this.exporttomsexcelbtn.TabIndex = 58;
+            this.exporttomsexcelbtn.Text = "Export to MS Excel";
+            this.exporttomsexcelbtn.UseVisualStyleBackColor = false;
+            this.exporttomsexcelbtn.Click += new System.EventHandler(this.exporttomsexcelbtn_Click);
             // 
             // productsearch
             // 
@@ -299,6 +413,7 @@
             this.productsearch.Size = new System.Drawing.Size(232, 25);
             this.productsearch.TabIndex = 55;
             this.productsearch.Text = "  Search";
+            this.productsearch.TextChanged += new System.EventHandler(this.productsearch_TextChanged);
             // 
             // deleteorderbtn
             // 
@@ -310,12 +425,13 @@
             this.deleteorderbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteorderbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteorderbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deleteorderbtn.Location = new System.Drawing.Point(456, 166);
+            this.deleteorderbtn.Location = new System.Drawing.Point(456, 140);
             this.deleteorderbtn.Name = "deleteorderbtn";
-            this.deleteorderbtn.Size = new System.Drawing.Size(204, 44);
+            this.deleteorderbtn.Size = new System.Drawing.Size(204, 34);
             this.deleteorderbtn.TabIndex = 10;
             this.deleteorderbtn.Text = "Delete";
             this.deleteorderbtn.UseVisualStyleBackColor = false;
+            this.deleteorderbtn.Click += new System.EventHandler(this.deleteorderbtn_Click);
             // 
             // updateorderbtn
             // 
@@ -329,10 +445,11 @@
             this.updateorderbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.updateorderbtn.Location = new System.Drawing.Point(456, 99);
             this.updateorderbtn.Name = "updateorderbtn";
-            this.updateorderbtn.Size = new System.Drawing.Size(204, 44);
+            this.updateorderbtn.Size = new System.Drawing.Size(204, 34);
             this.updateorderbtn.TabIndex = 9;
             this.updateorderbtn.Text = "Update";
             this.updateorderbtn.UseVisualStyleBackColor = false;
+            this.updateorderbtn.Click += new System.EventHandler(this.updateorderbtn_Click);
             // 
             // orderstatusinput
             // 
@@ -438,6 +555,7 @@
             this.ordertable.Name = "ordertable";
             this.ordertable.Size = new System.Drawing.Size(593, 242);
             this.ordertable.TabIndex = 1;
+            this.ordertable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ordertable_CellContentClick);
             // 
             // label2
             // 
@@ -457,8 +575,9 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.LavenderBlush;
-            this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.exporttomsexcelpayment);
+            this.tabPage3.Controls.Add(this.clearpaymentbtn);
+            this.tabPage3.Controls.Add(this.searchpaymentinput);
             this.tabPage3.Controls.Add(this.deletepaymentbtn);
             this.tabPage3.Controls.Add(this.updatepaymentbtn);
             this.tabPage3.Controls.Add(this.paymentstatusinput);
@@ -466,43 +585,61 @@
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Controls.Add(this.label8);
-            this.tabPage3.Controls.Add(this.paymenttable);
+            this.tabPage3.Controls.Add(this.paymenttableview);
             this.tabPage3.Controls.Add(this.label7);
             this.tabPage3.Location = new System.Drawing.Point(4, 28);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(775, 624);
+            this.tabPage3.Size = new System.Drawing.Size(775, 637);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Payment";
             // 
-            // textBox1
+            // exporttomsexcelpayment
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.exporttomsexcelpayment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox1.Location = new System.Drawing.Point(93, 335);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 25);
-            this.textBox1.TabIndex = 55;
-            this.textBox1.Text = "  Search";
+            this.exporttomsexcelpayment.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.exporttomsexcelpayment.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.exporttomsexcelpayment.FlatAppearance.BorderSize = 2;
+            this.exporttomsexcelpayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exporttomsexcelpayment.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exporttomsexcelpayment.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.exporttomsexcelpayment.Location = new System.Drawing.Point(538, 330);
+            this.exporttomsexcelpayment.Name = "exporttomsexcelpayment";
+            this.exporttomsexcelpayment.Size = new System.Drawing.Size(174, 30);
+            this.exporttomsexcelpayment.TabIndex = 65;
+            this.exporttomsexcelpayment.Text = "Export to MS Excel";
+            this.exporttomsexcelpayment.UseVisualStyleBackColor = false;
+            this.exporttomsexcelpayment.Click += new System.EventHandler(this.exporttomsexcelpayment_Click);
             // 
-            // button2
+            // clearpaymentbtn
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.clearpaymentbtn.BackColor = System.Drawing.Color.Orchid;
+            this.clearpaymentbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearpaymentbtn.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearpaymentbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.clearpaymentbtn.Location = new System.Drawing.Point(482, 177);
+            this.clearpaymentbtn.Name = "clearpaymentbtn";
+            this.clearpaymentbtn.Size = new System.Drawing.Size(175, 44);
+            this.clearpaymentbtn.TabIndex = 64;
+            this.clearpaymentbtn.Text = "Clear";
+            this.clearpaymentbtn.UseVisualStyleBackColor = false;
+            this.clearpaymentbtn.Click += new System.EventHandler(this.clearpaymentbtn_Click);
+            // 
+            // searchpaymentinput
+            // 
+            this.searchpaymentinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.LimeGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(482, 177);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 44);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Export to MS Excel";
-            this.button2.UseVisualStyleBackColor = false;
+            this.searchpaymentinput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.searchpaymentinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchpaymentinput.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.searchpaymentinput.Location = new System.Drawing.Point(49, 335);
+            this.searchpaymentinput.Name = "searchpaymentinput";
+            this.searchpaymentinput.Size = new System.Drawing.Size(203, 25);
+            this.searchpaymentinput.TabIndex = 55;
+            this.searchpaymentinput.Text = "  Search";
+            this.searchpaymentinput.TextChanged += new System.EventHandler(this.searchpaymentinput_TextChanged);
             // 
             // deletepaymentbtn
             // 
@@ -513,12 +650,13 @@
             this.deletepaymentbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deletepaymentbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletepaymentbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deletepaymentbtn.Location = new System.Drawing.Point(291, 177);
+            this.deletepaymentbtn.Location = new System.Drawing.Point(289, 177);
             this.deletepaymentbtn.Name = "deletepaymentbtn";
             this.deletepaymentbtn.Size = new System.Drawing.Size(175, 44);
             this.deletepaymentbtn.TabIndex = 8;
             this.deletepaymentbtn.Text = "Delete";
             this.deletepaymentbtn.UseVisualStyleBackColor = false;
+            this.deletepaymentbtn.Click += new System.EventHandler(this.deletepaymentbtn_Click);
             // 
             // updatepaymentbtn
             // 
@@ -535,6 +673,7 @@
             this.updatepaymentbtn.TabIndex = 7;
             this.updatepaymentbtn.Text = "Update";
             this.updatepaymentbtn.UseVisualStyleBackColor = false;
+            this.updatepaymentbtn.Click += new System.EventHandler(this.updatepaymentbtn_Click);
             // 
             // paymentstatusinput
             // 
@@ -546,6 +685,7 @@
             this.paymentstatusinput.Name = "paymentstatusinput";
             this.paymentstatusinput.Size = new System.Drawing.Size(162, 25);
             this.paymentstatusinput.TabIndex = 6;
+            this.paymentstatusinput.TextChanged += new System.EventHandler(this.paymentstatusinput_TextChanged);
             // 
             // paymentidinput
             // 
@@ -557,6 +697,7 @@
             this.paymentidinput.Name = "paymentidinput";
             this.paymentidinput.Size = new System.Drawing.Size(162, 25);
             this.paymentidinput.TabIndex = 5;
+            this.paymentidinput.TextChanged += new System.EventHandler(this.paymentidinput_TextChanged);
             // 
             // label10
             // 
@@ -600,21 +741,22 @@
             this.label8.TabIndex = 2;
             this.label8.Text = "Update Payment";
             // 
-            // paymenttable
+            // paymenttableview
             // 
-            this.paymenttable.AllowUserToResizeColumns = false;
-            this.paymenttable.AllowUserToResizeRows = false;
-            this.paymenttable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.paymenttableview.AllowUserToResizeColumns = false;
+            this.paymenttableview.AllowUserToResizeRows = false;
+            this.paymenttableview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.paymenttable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.paymenttable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.paymenttable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.paymenttable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.paymenttable.Location = new System.Drawing.Point(93, 366);
-            this.paymenttable.Name = "paymenttable";
-            this.paymenttable.Size = new System.Drawing.Size(564, 229);
-            this.paymenttable.TabIndex = 1;
+            this.paymenttableview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.paymenttableview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.paymenttableview.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.paymenttableview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.paymenttableview.Location = new System.Drawing.Point(49, 366);
+            this.paymenttableview.Name = "paymenttableview";
+            this.paymenttableview.Size = new System.Drawing.Size(663, 233);
+            this.paymenttableview.TabIndex = 1;
+            this.paymenttableview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.paymenttableview_CellContentClick);
             // 
             // label7
             // 
@@ -629,64 +771,6 @@
             this.label7.Size = new System.Drawing.Size(214, 37);
             this.label7.TabIndex = 0;
             this.label7.Text = "Payment Table";
-            // 
-            // transactionbtn
-            // 
-            this.transactionbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.transactionbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.transactionbtn.FlatAppearance.BorderSize = 0;
-            this.transactionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.transactionbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transactionbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.transactionbtn.Location = new System.Drawing.Point(0, 493);
-            this.transactionbtn.Name = "transactionbtn";
-            this.transactionbtn.Size = new System.Drawing.Size(206, 45);
-            this.transactionbtn.TabIndex = 31;
-            this.transactionbtn.Text = "Transactions";
-            this.transactionbtn.UseVisualStyleBackColor = false;
-            this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
-            // 
-            // logoutbtn
-            // 
-            this.logoutbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.logoutbtn.Location = new System.Drawing.Point(0, 630);
-            this.logoutbtn.Name = "logoutbtn";
-            this.logoutbtn.Size = new System.Drawing.Size(206, 39);
-            this.logoutbtn.TabIndex = 32;
-            this.logoutbtn.TabStop = false;
-            this.logoutbtn.Text = "Logout";
-            this.logoutbtn.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources._294bba2466aff48c4c5c7742e243cd3a;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(29, 22);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(723, 209);
-            this.panel2.TabIndex = 13;
             // 
             // Form4
             // 
@@ -713,7 +797,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ordertable)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.paymenttable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paymenttableview)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -746,7 +830,7 @@
         private System.Windows.Forms.TextBox orderstatusinput;
         private System.Windows.Forms.TextBox orderidinput;
         private System.Windows.Forms.Button deleteorderbtn;
-        private System.Windows.Forms.DataGridView paymenttable;
+        private System.Windows.Forms.DataGridView paymenttableview;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button updatepaymentbtn;
         private System.Windows.Forms.TextBox paymentstatusinput;
@@ -756,10 +840,14 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button deletepaymentbtn;
         private System.Windows.Forms.TextBox productsearch;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button exporttomsexcelbtn;
+        private System.Windows.Forms.TextBox searchpaymentinput;
         private System.Windows.Forms.Button transactionbtn;
         private System.Windows.Forms.Button logoutbtn;
+        private System.Windows.Forms.Button exportexcelbtn;
+        private System.Windows.Forms.TextBox searchinpt;
+        private System.Windows.Forms.Button clearordertbtn;
+        private System.Windows.Forms.Button clearpaymentbtn;
+        private System.Windows.Forms.Button exporttomsexcelpayment;
     }
 }

@@ -60,7 +60,7 @@
             this.usernamelabel.AutoSize = true;
             this.usernamelabel.Font = new System.Drawing.Font("Tw Cen MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernamelabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.usernamelabel.Location = new System.Drawing.Point(91, 174);
+            this.usernamelabel.Location = new System.Drawing.Point(88, 173);
             this.usernamelabel.Name = "usernamelabel";
             this.usernamelabel.Size = new System.Drawing.Size(133, 31);
             this.usernamelabel.TabIndex = 2;

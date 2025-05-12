@@ -272,16 +272,21 @@ namespace EDP_ONLINE_SHOP
             DataGridViewRow selectedRow = producttableview.SelectedRows[0];
             string originalProductName = selectedRow.Cells["product_name"].Value.ToString(); // identifier
             string originalCategoryId = selectedRow.Cells["category_id"].Value.ToString();   // identifier
+            string originalStockQuantity = selectedRow.Cells["stock_quantity"].Value.ToString(); // identifier
 
             // Get updated input values
             string updatedProductName = productnameinput.Text.Trim();
             string updatedCategoryId = categoryidproductinput.Text.Trim();
             string updatedPrice = priceinput.Text.Trim();
             string updatedDescription = descriptioninput.Text.Trim();
+            string updatedStockQuantity = stockquantityinput.Text.Trim(); // assuming this exists
 
-            if (string.IsNullOrWhiteSpace(updatedProductName) || string.IsNullOrWhiteSpace(updatedCategoryId) || string.IsNullOrWhiteSpace(updatedPrice))
+            if (string.IsNullOrWhiteSpace(updatedProductName) ||
+                string.IsNullOrWhiteSpace(updatedCategoryId) ||
+                string.IsNullOrWhiteSpace(updatedPrice) ||
+                string.IsNullOrWhiteSpace(updatedStockQuantity))
             {
-                MessageBox.Show("Please fill in required fields (Product Name, Category ID, Price).");
+                MessageBox.Show("Please fill in required fields (Product Name, Category ID, Price, Stock Quantity).");
                 return;
             }
 
@@ -290,16 +295,24 @@ namespace EDP_ONLINE_SHOP
             {
                 con.Open();
                 string query = @"UPDATE products 
-                         SET product_name = @updatedProductName, category_id = @updatedCategoryId, price = @updatedPrice, description = @updatedDescription 
-                         WHERE product_name = @originalProductName AND category_id = @originalCategoryId";
+                         SET product_name = @updatedProductName, 
+                             category_id = @updatedCategoryId, 
+                             price = @updatedPrice, 
+                             description = @updatedDescription, 
+                             stock_quantity = @updatedStockQuantity 
+                         WHERE product_name = @originalProductName 
+                           AND category_id = @originalCategoryId 
+                           AND stock_quantity = @originalStockQuantity";
 
                 MySqlCommand cmd = new MySqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@updatedProductName", updatedProductName);
                 cmd.Parameters.AddWithValue("@updatedCategoryId", updatedCategoryId);
                 cmd.Parameters.AddWithValue("@updatedPrice", updatedPrice);
                 cmd.Parameters.AddWithValue("@updatedDescription", updatedDescription);
+                cmd.Parameters.AddWithValue("@updatedStockQuantity", updatedStockQuantity);
                 cmd.Parameters.AddWithValue("@originalProductName", originalProductName);
                 cmd.Parameters.AddWithValue("@originalCategoryId", originalCategoryId);
+                cmd.Parameters.AddWithValue("@originalStockQuantity", originalStockQuantity);
 
                 int rowsAffected = cmd.ExecuteNonQuery();
                 if (rowsAffected > 0)
@@ -313,6 +326,7 @@ namespace EDP_ONLINE_SHOP
                 }
             }
         }
+
 
         private void deleteproductsbtn_Click(object sender, EventArgs e)
         {

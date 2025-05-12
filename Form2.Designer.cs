@@ -270,9 +270,9 @@
             this.productsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.productsbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productsbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.productsbtn.Location = new System.Drawing.Point(3, 340);
+            this.productsbtn.Location = new System.Drawing.Point(0, 340);
             this.productsbtn.Name = "productsbtn";
-            this.productsbtn.Size = new System.Drawing.Size(203, 45);
+            this.productsbtn.Size = new System.Drawing.Size(206, 45);
             this.productsbtn.TabIndex = 3;
             this.productsbtn.Text = "Products";
             this.productsbtn.UseVisualStyleBackColor = false;
