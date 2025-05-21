@@ -51,7 +51,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tw Cen MT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(61, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(210, 24);
@@ -64,12 +64,13 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.label1.Location = new System.Drawing.Point(193, 33);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(193, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 34);
             this.label1.TabIndex = 5;
             this.label1.Text = "Verification";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // codeinput
             // 
@@ -89,12 +90,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleVioletRed;
             this.ClientSize = new System.Drawing.Size(523, 323);
             this.Controls.Add(this.verifybtn);
             this.Controls.Add(this.codeinput);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Verificationform";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verificationform";
             this.Load += new System.EventHandler(this.Verificationform_Load);
             this.ResumeLayout(false);

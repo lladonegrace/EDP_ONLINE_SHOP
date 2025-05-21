@@ -26,6 +26,8 @@ namespace EDP_ONLINE_SHOP
             customertabledataview.MultiSelect = false;
             customertabledataview.ReadOnly = true; // Optional: prevent editing directly in grid
             customertabledataview.AllowUserToAddRows = false;
+
+
         }
         public void getData()
         {
@@ -184,31 +186,7 @@ namespace EDP_ONLINE_SHOP
         }
         private void searchinput_TextChanged(object sender, EventArgs e)
         {
-            string searchTerm = searchinput.Text.Trim();
-
-            if (string.IsNullOrEmpty(searchTerm))
-            {
-                getData(); // If search box is empty, load all data
-                return;
-            }
-
-            // SQL query to search for matching customers by name or email
-            string conString = "server=localhost;uid=root;pwd=#GracE_121203;database=online_shop;";
-            using (MySqlConnection con = new MySqlConnection(conString))
-            {
-                con.Open();
-                string query = "SELECT * FROM customers WHERE name LIKE @searchTerm OR email LIKE @searchTerm";
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%"); // % allows for partial matches
-
-                MySqlDataReader reader = cmd.ExecuteReader();
-                DataTable dt = new DataTable();
-                dt.Load(reader);
-                customertabledataview.DataSource = dt;
-
-                reader.Close();
-                con.Close();
-            }
+           
         }
 
 
@@ -337,5 +315,33 @@ namespace EDP_ONLINE_SHOP
             phoneinput.Text = string.Empty;
         }
 
+        private void searchinput_TextChanged_1(object sender, EventArgs e)
+        {
+            string searchTerm = searchinput.Text.Trim();
+
+            if (string.IsNullOrEmpty(searchTerm))
+            {
+                getData(); // If search box is empty, load all data
+                return;
+            }
+
+            // SQL query to search for matching customers by name or email
+            string conString = "server=localhost;uid=root;pwd=#GracE_121203;database=online_shop;";
+            using (MySqlConnection con = new MySqlConnection(conString))
+            {
+                con.Open();
+                string query = "SELECT * FROM customers WHERE name LIKE @searchTerm OR email LIKE @searchTerm";
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%"); // % allows for partial matches
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Load(reader);
+                customertabledataview.DataSource = dt;
+
+                reader.Close();
+                con.Close();
+            }
+        }
     }
 }

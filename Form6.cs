@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace EDP_ONLINE_SHOP
 {
@@ -15,6 +16,33 @@ namespace EDP_ONLINE_SHOP
         public Form6()
         {
             InitializeComponent();
+        }
+        private void Form6_Load(object sender, EventArgs e)
+        {
+            getData();
+           
+        }
+
+        public void getData()
+        {
+            string conString = "server=localhost;uid=root;pwd=#GracE_121203;database=online_shop;";
+            using (MySqlConnection con = new MySqlConnection(conString))
+            {
+                con.Open();
+
+                // Load latest_order_2025
+                string query1 = "SELECT * FROM audit_log";
+                MySqlCommand cmd1 = new MySqlCommand(query1, con);
+                MySqlDataReader reader1 = cmd1.ExecuteReader();
+                DataTable dt1 = new DataTable();
+                dt1.Load(reader1);
+                auditlogview.DataSource = dt1;
+                reader1.Close();
+            }
+        }
+        private void auditlogview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         private void inventorybtn_Click(object sender, EventArgs e)
@@ -49,6 +77,13 @@ namespace EDP_ONLINE_SHOP
         {
             Form4 form4 = new Form4();
             form4.Show();
+            this.Hide();
+        }
+
+        private void logoutbtn_Click(object sender, EventArgs e)
+        {
+            Logincs login = new Logincs();
+            login.Show();
             this.Hide();
         }
     }

@@ -91,7 +91,7 @@
             this.transactionbtn.Name = "transactionbtn";
             this.transactionbtn.Size = new System.Drawing.Size(206, 45);
             this.transactionbtn.TabIndex = 30;
-            this.transactionbtn.Text = "Transactions";
+            this.transactionbtn.Text = "Audit Log";
             this.transactionbtn.UseVisualStyleBackColor = false;
             this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
             // 

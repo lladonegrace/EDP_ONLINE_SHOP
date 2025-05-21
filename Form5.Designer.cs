@@ -29,39 +29,33 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.logoutbtn = new System.Windows.Forms.Button();
+            this.transactionbtn = new System.Windows.Forms.Button();
             this.inventroybtn = new System.Windows.Forms.Button();
             this.orderitemsbtn = new System.Windows.Forms.Button();
             this.productsbtn = new System.Windows.Forms.Button();
             this.customerbtn = new System.Windows.Forms.Button();
             this.dashboardbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.clearinventorybtn = new System.Windows.Forms.Button();
+            this.searchinventorysearch = new System.Windows.Forms.TextBox();
+            this.quantityaddedinput = new System.Windows.Forms.TextBox();
+            this.prodcutidinput = new System.Windows.Forms.TextBox();
+            this.exportexcelbtn = new System.Windows.Forms.Button();
+            this.updateinventorybtn = new System.Windows.Forms.Button();
+            this.addinventorybtn = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.inventorytable = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.productsearch = new System.Windows.Forms.TextBox();
-            this.exportexcelbtn = new System.Windows.Forms.Button();
-            this.deleteinventorybtn = new System.Windows.Forms.Button();
-            this.updateinventorybtn = new System.Windows.Forms.Button();
-            this.addinventorybtn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.auditview = new System.Windows.Forms.DataGridView();
-            this.transactionbtn = new System.Windows.Forms.Button();
-            this.logoutbtn = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inventorytable)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.auditview)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,6 +74,43 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(206, 669);
             this.panel1.TabIndex = 1;
+            // 
+            // logoutbtn
+            // 
+            this.logoutbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.logoutbtn.Location = new System.Drawing.Point(0, 630);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(206, 39);
+            this.logoutbtn.TabIndex = 33;
+            this.logoutbtn.TabStop = false;
+            this.logoutbtn.Text = "Logout";
+            this.logoutbtn.UseVisualStyleBackColor = false;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
+            // 
+            // transactionbtn
+            // 
+            this.transactionbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.transactionbtn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.transactionbtn.FlatAppearance.BorderSize = 0;
+            this.transactionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.transactionbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transactionbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.transactionbtn.Location = new System.Drawing.Point(0, 493);
+            this.transactionbtn.Name = "transactionbtn";
+            this.transactionbtn.Size = new System.Drawing.Size(206, 45);
+            this.transactionbtn.TabIndex = 32;
+            this.transactionbtn.Text = "Audit Log";
+            this.transactionbtn.UseVisualStyleBackColor = false;
+            this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
             // 
             // inventroybtn
             // 
@@ -167,55 +198,26 @@
             this.label1.Text = "Admin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // flowLayoutPanel1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Salmon;
-            this.label2.Location = new System.Drawing.Point(302, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 37);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Inventory";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // inventorytable
-            // 
-            this.inventorytable.AllowUserToResizeColumns = false;
-            this.inventorytable.AllowUserToResizeRows = false;
-            this.inventorytable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.inventorytable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.inventorytable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.inventorytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.inventorytable.Location = new System.Drawing.Point(88, 294);
-            this.inventorytable.Name = "inventorytable";
-            this.inventorytable.Size = new System.Drawing.Size(621, 244);
-            this.inventorytable.TabIndex = 12;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(212, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(779, 669);
-            this.tabControl1.TabIndex = 13;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.tabPage1.Controls.Add(this.productsearch);
+            this.tabPage1.Controls.Add(this.clearinventorybtn);
+            this.tabPage1.Controls.Add(this.searchinventorysearch);
+            this.tabPage1.Controls.Add(this.quantityaddedinput);
+            this.tabPage1.Controls.Add(this.prodcutidinput);
             this.tabPage1.Controls.Add(this.exportexcelbtn);
-            this.tabPage1.Controls.Add(this.deleteinventorybtn);
             this.tabPage1.Controls.Add(this.updateinventorybtn);
             this.tabPage1.Controls.Add(this.addinventorybtn);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label2);
@@ -227,19 +229,50 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Inventory";
             // 
-            // productsearch
+            // clearinventorybtn
             // 
-            this.productsearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.clearinventorybtn.BackColor = System.Drawing.Color.Orchid;
+            this.clearinventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearinventorybtn.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearinventorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.clearinventorybtn.Location = new System.Drawing.Point(511, 154);
+            this.clearinventorybtn.Name = "clearinventorybtn";
+            this.clearinventorybtn.Size = new System.Drawing.Size(180, 36);
+            this.clearinventorybtn.TabIndex = 65;
+            this.clearinventorybtn.Text = "Clear";
+            this.clearinventorybtn.UseVisualStyleBackColor = false;
+            this.clearinventorybtn.Click += new System.EventHandler(this.clearinventorybtn_Click);
+            // 
+            // searchinventorysearch
+            // 
+            this.searchinventorysearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.productsearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.productsearch.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productsearch.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.productsearch.Location = new System.Drawing.Point(88, 263);
-            this.productsearch.Name = "productsearch";
-            this.productsearch.Size = new System.Drawing.Size(203, 25);
-            this.productsearch.TabIndex = 59;
-            this.productsearch.Text = "  Search";
+            this.searchinventorysearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.searchinventorysearch.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchinventorysearch.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.searchinventorysearch.Location = new System.Drawing.Point(88, 263);
+            this.searchinventorysearch.Name = "searchinventorysearch";
+            this.searchinventorysearch.Size = new System.Drawing.Size(203, 25);
+            this.searchinventorysearch.TabIndex = 59;
+            this.searchinventorysearch.Text = "  Search";
+            this.searchinventorysearch.TextChanged += new System.EventHandler(this.searchinventorysearch_TextChanged);
+            // 
+            // quantityaddedinput
+            // 
+            this.quantityaddedinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantityaddedinput.Location = new System.Drawing.Point(520, 97);
+            this.quantityaddedinput.Name = "quantityaddedinput";
+            this.quantityaddedinput.Size = new System.Drawing.Size(189, 25);
+            this.quantityaddedinput.TabIndex = 16;
+            // 
+            // prodcutidinput
+            // 
+            this.prodcutidinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prodcutidinput.Location = new System.Drawing.Point(167, 94);
+            this.prodcutidinput.Name = "prodcutidinput";
+            this.prodcutidinput.Size = new System.Drawing.Size(185, 25);
+            this.prodcutidinput.TabIndex = 15;
             // 
             // exportexcelbtn
             // 
@@ -252,28 +285,13 @@
             this.exportexcelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exportexcelbtn.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exportexcelbtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.exportexcelbtn.Location = new System.Drawing.Point(568, 261);
+            this.exportexcelbtn.Location = new System.Drawing.Point(542, 261);
             this.exportexcelbtn.Name = "exportexcelbtn";
-            this.exportexcelbtn.Size = new System.Drawing.Size(141, 27);
+            this.exportexcelbtn.Size = new System.Drawing.Size(167, 27);
             this.exportexcelbtn.TabIndex = 60;
             this.exportexcelbtn.Text = "Export to MS Excel";
             this.exportexcelbtn.UseVisualStyleBackColor = false;
-            // 
-            // deleteinventorybtn
-            // 
-            this.deleteinventorybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.deleteinventorybtn.BackColor = System.Drawing.Color.IndianRed;
-            this.deleteinventorybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteinventorybtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deleteinventorybtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deleteinventorybtn.Location = new System.Drawing.Point(506, 154);
-            this.deleteinventorybtn.Name = "deleteinventorybtn";
-            this.deleteinventorybtn.Size = new System.Drawing.Size(180, 36);
-            this.deleteinventorybtn.TabIndex = 58;
-            this.deleteinventorybtn.Text = "Delete";
-            this.deleteinventorybtn.UseVisualStyleBackColor = false;
+            this.exportexcelbtn.Click += new System.EventHandler(this.exportexcelbtn_Click);
             // 
             // updateinventorybtn
             // 
@@ -290,6 +308,7 @@
             this.updateinventorybtn.TabIndex = 57;
             this.updateinventorybtn.Text = "Update";
             this.updateinventorybtn.UseVisualStyleBackColor = false;
+            this.updateinventorybtn.Click += new System.EventHandler(this.updateinventorybtn_Click);
             // 
             // addinventorybtn
             // 
@@ -307,22 +326,7 @@
             this.addinventorybtn.TabIndex = 56;
             this.addinventorybtn.Text = "Add";
             this.addinventorybtn.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(520, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 25);
-            this.textBox2.TabIndex = 16;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(167, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 25);
-            this.textBox1.TabIndex = 15;
+            this.addinventorybtn.Click += new System.EventHandler(this.addinventorybtn_Click);
             // 
             // label5
             // 
@@ -348,76 +352,44 @@
             this.label4.Text = "Product Id";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tabPage2
+            // label2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.tabPage2.Controls.Add(this.auditview);
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(771, 637);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Audit_log";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Salmon;
+            this.label2.Location = new System.Drawing.Point(312, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(143, 37);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Inventory";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // auditview
+            // inventorytable
             // 
-            this.auditview.AllowUserToResizeColumns = false;
-            this.auditview.AllowUserToResizeRows = false;
-            this.auditview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.auditview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.auditview.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.auditview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.auditview.Location = new System.Drawing.Point(112, 267);
-            this.auditview.Name = "auditview";
-            this.auditview.Size = new System.Drawing.Size(562, 303);
-            this.auditview.TabIndex = 0;
+            this.inventorytable.AllowUserToResizeColumns = false;
+            this.inventorytable.AllowUserToResizeRows = false;
+            this.inventorytable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.inventorytable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.inventorytable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.inventorytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.inventorytable.Location = new System.Drawing.Point(88, 294);
+            this.inventorytable.Name = "inventorytable";
+            this.inventorytable.Size = new System.Drawing.Size(621, 313);
+            this.inventorytable.TabIndex = 12;
+            this.inventorytable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.inventorytable_CellContentClick);
             // 
-            // transactionbtn
+            // tabControl1
             // 
-            this.transactionbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.transactionbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.transactionbtn.FlatAppearance.BorderSize = 0;
-            this.transactionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.transactionbtn.Font = new System.Drawing.Font("Tw Cen MT", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transactionbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.transactionbtn.Location = new System.Drawing.Point(0, 493);
-            this.transactionbtn.Name = "transactionbtn";
-            this.transactionbtn.Size = new System.Drawing.Size(206, 45);
-            this.transactionbtn.TabIndex = 32;
-            this.transactionbtn.Text = "Transactions";
-            this.transactionbtn.UseVisualStyleBackColor = false;
-            this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
-            // 
-            // logoutbtn
-            // 
-            this.logoutbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.logoutbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.logoutbtn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.logoutbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoutbtn.Font = new System.Drawing.Font("Tw Cen MT Condensed Extra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.logoutbtn.Location = new System.Drawing.Point(0, 630);
-            this.logoutbtn.Name = "logoutbtn";
-            this.logoutbtn.Size = new System.Drawing.Size(206, 39);
-            this.logoutbtn.TabIndex = 33;
-            this.logoutbtn.TabStop = false;
-            this.logoutbtn.Text = "Logout";
-            this.logoutbtn.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.download__1_1;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(25, 6);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(727, 357);
-            this.panel2.TabIndex = 13;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(212, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(779, 669);
+            this.tabControl1.TabIndex = 13;
             // 
             // label3
             // 
@@ -428,18 +400,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 40);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Audit Log";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.ada7ea6eb61979926f641471826d43b0_removebg_preview1;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(178, 168);
-            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // Form5
             // 
@@ -456,14 +417,10 @@
             this.Load += new System.EventHandler(this.Form5_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.inventorytable)).EndInit();
-            this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.auditview)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inventorytable)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -478,24 +435,21 @@
         private System.Windows.Forms.Button dashboardbtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button transactionbtn;
+        private System.Windows.Forms.Button logoutbtn;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button clearinventorybtn;
+        private System.Windows.Forms.TextBox searchinventorysearch;
+        private System.Windows.Forms.TextBox quantityaddedinput;
+        private System.Windows.Forms.TextBox prodcutidinput;
+        private System.Windows.Forms.Button exportexcelbtn;
+        private System.Windows.Forms.Button updateinventorybtn;
+        private System.Windows.Forms.Button addinventorybtn;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView inventorytable;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView auditview;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button deleteinventorybtn;
-        private System.Windows.Forms.Button updateinventorybtn;
-        private System.Windows.Forms.Button addinventorybtn;
-        private System.Windows.Forms.TextBox productsearch;
-        private System.Windows.Forms.Button exportexcelbtn;
-        private System.Windows.Forms.Button transactionbtn;
-        private System.Windows.Forms.Button logoutbtn;
     }
 }

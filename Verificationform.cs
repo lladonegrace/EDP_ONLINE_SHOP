@@ -61,5 +61,9 @@ namespace EDP_ONLINE_SHOP
             }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -64,6 +64,9 @@
             this.updateproductsbtn = new System.Windows.Forms.Button();
             this.deleteproductsbtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.clearproductbtn = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.stockquantityinput = new System.Windows.Forms.TextBox();
             this.producttableview = new System.Windows.Forms.DataGridView();
             this.vate = new System.Windows.Forms.Label();
             this.categoryidproductinput = new System.Windows.Forms.TextBox();
@@ -78,9 +81,6 @@
             this.updatecategorybtn = new System.Windows.Forms.Button();
             this.deletecategorybtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.stockquantityinput = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.clearproductbtn = new System.Windows.Forms.Button();
             this.clearcategorybtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.categorytableview)).BeginInit();
@@ -337,7 +337,7 @@
             this.categorytableview.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.categorytableview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.categorytableview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categorytableview.Location = new System.Drawing.Point(415, 430);
+            this.categorytableview.Location = new System.Drawing.Point(412, 442);
             this.categorytableview.Name = "categorytableview";
             this.categorytableview.Size = new System.Drawing.Size(252, 214);
             this.categorytableview.TabIndex = 32;
@@ -351,7 +351,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.LightCoral;
-            this.label10.Location = new System.Drawing.Point(259, 390);
+            this.label10.Location = new System.Drawing.Point(241, 402);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(157, 37);
             this.label10.TabIndex = 33;
@@ -392,6 +392,7 @@
             this.logoutbtn.TabStop = false;
             this.logoutbtn.Text = "Logout";
             this.logoutbtn.UseVisualStyleBackColor = false;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
             // transactionbtn
             // 
@@ -407,7 +408,7 @@
             this.transactionbtn.Name = "transactionbtn";
             this.transactionbtn.Size = new System.Drawing.Size(206, 45);
             this.transactionbtn.TabIndex = 44;
-            this.transactionbtn.Text = "Transactions";
+            this.transactionbtn.Text = "Audit Log";
             this.transactionbtn.UseVisualStyleBackColor = false;
             this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
             // 
@@ -542,15 +543,12 @@
             this.descriptioninput.Location = new System.Drawing.Point(136, 262);
             this.descriptioninput.MinimumSize = new System.Drawing.Size(150, 60);
             this.descriptioninput.Name = "descriptioninput";
-            this.descriptioninput.Size = new System.Drawing.Size(150, 60);
+            this.descriptioninput.Size = new System.Drawing.Size(150, 26);
             this.descriptioninput.TabIndex = 38;
             this.descriptioninput.TextChanged += new System.EventHandler(this.descriptioninput_TextChanged);
             // 
             // addbproductbtn
             // 
-            this.addbproductbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.addbproductbtn.BackColor = System.Drawing.Color.LimeGreen;
             this.addbproductbtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.addbproductbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -558,22 +556,21 @@
             this.addbproductbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.addbproductbtn.Location = new System.Drawing.Point(318, 290);
             this.addbproductbtn.Name = "addbproductbtn";
-            this.addbproductbtn.Size = new System.Drawing.Size(103, 32);
+            this.addbproductbtn.Size = new System.Drawing.Size(440, 32);
             this.addbproductbtn.TabIndex = 41;
-            this.addbproductbtn.Text = "Add";
+            this.addbproductbtn.Text = "Add New Transaction";
             this.addbproductbtn.UseVisualStyleBackColor = false;
             this.addbproductbtn.Click += new System.EventHandler(this.addbproductbtn_Click);
             // 
             // updateproductsbtn
             // 
-            this.updateproductsbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.updateproductsbtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.updateproductsbtn.BackColor = System.Drawing.Color.DarkKhaki;
             this.updateproductsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateproductsbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateproductsbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.updateproductsbtn.Location = new System.Drawing.Point(427, 290);
+            this.updateproductsbtn.Location = new System.Drawing.Point(373, 328);
             this.updateproductsbtn.Name = "updateproductsbtn";
             this.updateproductsbtn.Size = new System.Drawing.Size(103, 32);
             this.updateproductsbtn.TabIndex = 42;
@@ -583,14 +580,13 @@
             // 
             // deleteproductsbtn
             // 
-            this.deleteproductsbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.deleteproductsbtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.deleteproductsbtn.BackColor = System.Drawing.Color.IndianRed;
             this.deleteproductsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteproductsbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteproductsbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deleteproductsbtn.Location = new System.Drawing.Point(645, 290);
+            this.deleteproductsbtn.Location = new System.Drawing.Point(617, 328);
             this.deleteproductsbtn.Name = "deleteproductsbtn";
             this.deleteproductsbtn.Size = new System.Drawing.Size(103, 32);
             this.deleteproductsbtn.TabIndex = 43;
@@ -625,16 +621,54 @@
             this.panel3.Controls.Add(this.priceinput);
             this.panel3.Location = new System.Drawing.Point(211, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(770, 360);
+            this.panel3.Size = new System.Drawing.Size(770, 373);
             this.panel3.TabIndex = 44;
+            // 
+            // clearproductbtn
+            // 
+            this.clearproductbtn.BackColor = System.Drawing.Color.Orchid;
+            this.clearproductbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearproductbtn.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearproductbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.clearproductbtn.Location = new System.Drawing.Point(495, 328);
+            this.clearproductbtn.Name = "clearproductbtn";
+            this.clearproductbtn.Size = new System.Drawing.Size(103, 32);
+            this.clearproductbtn.TabIndex = 61;
+            this.clearproductbtn.Text = "Clear";
+            this.clearproductbtn.UseVisualStyleBackColor = false;
+            this.clearproductbtn.Click += new System.EventHandler(this.clearproductbtn_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.MistyRose;
+            this.label5.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.LightCoral;
+            this.label5.Location = new System.Drawing.Point(31, 218);
+            this.label5.MinimumSize = new System.Drawing.Size(40, 30);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(99, 30);
+            this.label5.TabIndex = 63;
+            this.label5.Text = "Stock Quantity";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // stockquantityinput
+            // 
+            this.stockquantityinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.stockquantityinput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stockquantityinput.Location = new System.Drawing.Point(136, 218);
+            this.stockquantityinput.MinimumSize = new System.Drawing.Size(150, 30);
+            this.stockquantityinput.Name = "stockquantityinput";
+            this.stockquantityinput.Size = new System.Drawing.Size(150, 26);
+            this.stockquantityinput.TabIndex = 62;
+            this.stockquantityinput.TextChanged += new System.EventHandler(this.stockquantityinput_TextChanged);
             // 
             // producttableview
             // 
             this.producttableview.AllowUserToResizeColumns = false;
             this.producttableview.AllowUserToResizeRows = false;
-            this.producttableview.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.producttableview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.producttableview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.producttableview.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
@@ -690,9 +724,6 @@
             // 
             // exportexcelbtn
             // 
-            this.exportexcelbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.exportexcelbtn.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.exportexcelbtn.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.exportexcelbtn.FlatAppearance.BorderSize = 2;
@@ -739,7 +770,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.LightCoral;
-            this.label11.Location = new System.Drawing.Point(724, 390);
+            this.label11.Location = new System.Drawing.Point(724, 402);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(222, 37);
             this.label11.TabIndex = 47;
@@ -839,51 +870,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackgroundImage = global::EDP_ONLINE_SHOP.Properties.Resources.Screenshot_2025_05_09_230752;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(230, 430);
+            this.panel4.Location = new System.Drawing.Point(230, 442);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(186, 214);
             this.panel4.TabIndex = 53;
-            // 
-            // stockquantityinput
-            // 
-            this.stockquantityinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.stockquantityinput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stockquantityinput.Location = new System.Drawing.Point(136, 218);
-            this.stockquantityinput.MinimumSize = new System.Drawing.Size(150, 30);
-            this.stockquantityinput.Name = "stockquantityinput";
-            this.stockquantityinput.Size = new System.Drawing.Size(150, 30);
-            this.stockquantityinput.TabIndex = 62;
-            this.stockquantityinput.TextChanged += new System.EventHandler(this.stockquantityinput_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.MistyRose;
-            this.label5.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.LightCoral;
-            this.label5.Location = new System.Drawing.Point(31, 218);
-            this.label5.MinimumSize = new System.Drawing.Size(40, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 30);
-            this.label5.TabIndex = 63;
-            this.label5.Text = "Stock Quantity";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // clearproductbtn
-            // 
-            this.clearproductbtn.BackColor = System.Drawing.Color.Orchid;
-            this.clearproductbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearproductbtn.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearproductbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.clearproductbtn.Location = new System.Drawing.Point(536, 290);
-            this.clearproductbtn.Name = "clearproductbtn";
-            this.clearproductbtn.Size = new System.Drawing.Size(103, 32);
-            this.clearproductbtn.TabIndex = 61;
-            this.clearproductbtn.Text = "Clear";
-            this.clearproductbtn.UseVisualStyleBackColor = false;
-            this.clearproductbtn.Click += new System.EventHandler(this.clearproductbtn_Click);
             // 
             // clearcategorybtn
             // 

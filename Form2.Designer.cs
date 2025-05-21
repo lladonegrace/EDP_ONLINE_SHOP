@@ -175,7 +175,7 @@
             this.customertabledataview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.customertabledataview.Location = new System.Drawing.Point(28, 104);
             this.customertabledataview.Name = "customertabledataview";
-            this.customertabledataview.Size = new System.Drawing.Size(725, 230);
+            this.customertabledataview.Size = new System.Drawing.Size(725, 243);
             this.customertabledataview.TabIndex = 25;
             this.customertabledataview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customertabledataview_CellContentClick);
             // 
@@ -210,7 +210,7 @@
             this.transactionbtn.Name = "transactionbtn";
             this.transactionbtn.Size = new System.Drawing.Size(206, 45);
             this.transactionbtn.TabIndex = 31;
-            this.transactionbtn.Text = "Transactions";
+            this.transactionbtn.Text = "Audit Log";
             this.transactionbtn.UseVisualStyleBackColor = false;
             this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
             // 
@@ -376,7 +376,7 @@
             this.panel2.Controls.Add(this.customertabledataview);
             this.panel2.Location = new System.Drawing.Point(212, 304);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(777, 352);
+            this.panel2.Size = new System.Drawing.Size(777, 365);
             this.panel2.TabIndex = 56;
             // 
             // searchinput
@@ -387,13 +387,12 @@
             this.searchinput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.searchinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchinput.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.searchinput.Location = new System.Drawing.Point(28, 71);
+            this.searchinput.Location = new System.Drawing.Point(28, 73);
             this.searchinput.Name = "searchinput";
             this.searchinput.Size = new System.Drawing.Size(223, 25);
-            this.searchinput.TabIndex = 58;
+            this.searchinput.TabIndex = 59;
             this.searchinput.Text = "  Search";
-            this.searchinput.Visible = false;
-            this.searchinput.TextChanged += new System.EventHandler(this.searchinput_TextChanged);
+            this.searchinput.TextChanged += new System.EventHandler(this.searchinput_TextChanged_1);
             // 
             // exporttomsexcelbtn
             // 
@@ -542,10 +541,10 @@
         private System.Windows.Forms.Button customerbtn;
         private System.Windows.Forms.Button dashboardbtn;
         private System.Windows.Forms.Button transactionbtn;
-        private System.Windows.Forms.TextBox searchinput;
         private System.Windows.Forms.TextBox phoneinput;
         private System.Windows.Forms.Button deletebtn;
         private System.Windows.Forms.Button updatebtn;
         private System.Windows.Forms.Button clearinput;
+        private System.Windows.Forms.TextBox searchinput;
     }
 }

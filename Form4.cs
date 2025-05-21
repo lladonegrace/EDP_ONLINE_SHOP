@@ -217,7 +217,7 @@ namespace EDP_ONLINE_SHOP
 
             // Get updated input values
             string updatedCustomerId = customeridinput.Text.Trim();
-            string updatedOrderId = orderidinput.Text.Trim();
+            string updatedOrderId = totalamountinput.Text.Trim();
             string updatedOrderStatus = orderstatusinput.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(updatedCustomerId) ||
@@ -266,7 +266,7 @@ namespace EDP_ONLINE_SHOP
                     DataGridViewRow row = ordertable.Rows[e.RowIndex];
 
                     customeridinput.Text = row.Cells["customer_id"].Value.ToString();
-                    orderidinput.Text = row.Cells["order_id"].Value.ToString();
+                    totalamountinput.Text = row.Cells["order_id"].Value.ToString();
                     orderstatusinput.Text = row.Cells["order_status"].Value.ToString();
                  
                 }
@@ -281,7 +281,7 @@ namespace EDP_ONLINE_SHOP
         private void clearordertbtn_Click(object sender, EventArgs e)
         {
             customeridinput.Text = string.Empty;
-            orderidinput.Text = string.Empty;
+            totalamountinput.Text = string.Empty;
             orderstatusinput.Text = string.Empty;
         }
 
@@ -623,6 +623,78 @@ namespace EDP_ONLINE_SHOP
                 reader.Close();
                 con.Close();
             }
+        }
+
+        private void addordersbtn_Click(object sender, EventArgs e)
+        {
+            // Assuming you have input fields for customer_id, total_amount, and order_status
+            // You'll need to replace these with the actual names of your input controls
+            string customerId = customeridinput.Text.Trim();
+            decimal totalAmount;
+            if (!decimal.TryParse(totalamountinput.Text.Trim(), out totalAmount))
+            {
+                MessageBox.Show("Please enter a valid Total Amount.");
+                return;
+            }
+            DateTime orderDate = DateTime.Now; // Or get from a DateTimePicker
+            string orderStatus = orderstatusinput.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(customerId) || string.IsNullOrWhiteSpace(orderStatus))
+            {
+                MessageBox.Show("Please fill in Customer ID and Order Status.");
+                return;
+            }
+
+            string conString = "server=localhost;uid=root;pwd=#GracE_121203;database=online_shop;";
+            using (MySqlConnection con = new MySqlConnection(conString))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "INSERT INTO orders (customer_id, order_date, order_status, total_amount) " +
+                                   "VALUES (@customerId, @orderDate, @orderStatus, @totalAmount)";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@customerId", customerId);
+                    cmd.Parameters.AddWithValue("@orderDate", orderDate);
+                    cmd.Parameters.AddWithValue("@orderStatus", orderStatus);
+                    cmd.Parameters.AddWithValue("@totalAmount", totalAmount);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("New order added successfully!");
+                        getData(); // Refresh your DataGridView to show the new order
+                        // The 'after_order_insert' trigger in MySQL has now automatically logged this insertion.
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to add new order.");
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Error adding order: " + ex.Message);
+                }
+            }
+        }
+
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logoutbtn_Click(object sender, EventArgs e)
+        {
+            Logincs login = new Logincs();
+            login.Show();
+            this.Hide();
         }
     }
 }

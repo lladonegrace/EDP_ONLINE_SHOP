@@ -46,15 +46,16 @@
             this.exportexcelbtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.totalamountinput = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.addordersbtn = new System.Windows.Forms.Button();
             this.clearordertbtn = new System.Windows.Forms.Button();
             this.exporttomsexcelbtn = new System.Windows.Forms.Button();
             this.productsearch = new System.Windows.Forms.TextBox();
             this.deleteorderbtn = new System.Windows.Forms.Button();
             this.updateorderbtn = new System.Windows.Forms.Button();
             this.orderstatusinput = new System.Windows.Forms.TextBox();
-            this.orderidinput = new System.Windows.Forms.TextBox();
             this.customeridinput = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -120,6 +121,7 @@
             this.logoutbtn.TabStop = false;
             this.logoutbtn.Text = "Logout";
             this.logoutbtn.UseVisualStyleBackColor = false;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
             // transactionbtn
             // 
@@ -135,7 +137,7 @@
             this.transactionbtn.Name = "transactionbtn";
             this.transactionbtn.Size = new System.Drawing.Size(206, 45);
             this.transactionbtn.TabIndex = 31;
-            this.transactionbtn.Text = "Transactions";
+            this.transactionbtn.Text = "Audit Log";
             this.transactionbtn.UseVisualStyleBackColor = false;
             this.transactionbtn.Click += new System.EventHandler(this.transactionbtn_Click);
             // 
@@ -346,15 +348,16 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.MistyRose;
+            this.tabPage2.Controls.Add(this.totalamountinput);
+            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.addordersbtn);
             this.tabPage2.Controls.Add(this.clearordertbtn);
             this.tabPage2.Controls.Add(this.exporttomsexcelbtn);
             this.tabPage2.Controls.Add(this.productsearch);
             this.tabPage2.Controls.Add(this.deleteorderbtn);
             this.tabPage2.Controls.Add(this.updateorderbtn);
             this.tabPage2.Controls.Add(this.orderstatusinput);
-            this.tabPage2.Controls.Add(this.orderidinput);
             this.tabPage2.Controls.Add(this.customeridinput);
-            this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label3);
@@ -366,6 +369,46 @@
             this.tabPage2.Size = new System.Drawing.Size(775, 637);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Order";
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // totalamountinput
+            // 
+            this.totalamountinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.totalamountinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalamountinput.Location = new System.Drawing.Point(234, 141);
+            this.totalamountinput.Name = "totalamountinput";
+            this.totalamountinput.Size = new System.Drawing.Size(199, 25);
+            this.totalamountinput.TabIndex = 64;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Salmon;
+            this.label6.Location = new System.Drawing.Point(116, 144);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 19);
+            this.label6.TabIndex = 63;
+            this.label6.Text = "Total Amount";
+            // 
+            // addordersbtn
+            // 
+            this.addordersbtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.addordersbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addordersbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addordersbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.addordersbtn.Location = new System.Drawing.Point(456, 91);
+            this.addordersbtn.Name = "addordersbtn";
+            this.addordersbtn.Size = new System.Drawing.Size(204, 34);
+            this.addordersbtn.TabIndex = 9;
+            this.addordersbtn.Text = "Add New Transaction";
+            this.addordersbtn.UseVisualStyleBackColor = false;
+            this.addordersbtn.Click += new System.EventHandler(this.addordersbtn_Click);
             // 
             // clearordertbtn
             // 
@@ -373,9 +416,9 @@
             this.clearordertbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearordertbtn.Font = new System.Drawing.Font("Tw Cen MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearordertbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.clearordertbtn.Location = new System.Drawing.Point(456, 180);
+            this.clearordertbtn.Location = new System.Drawing.Point(234, 221);
             this.clearordertbtn.Name = "clearordertbtn";
-            this.clearordertbtn.Size = new System.Drawing.Size(204, 34);
+            this.clearordertbtn.Size = new System.Drawing.Size(426, 34);
             this.clearordertbtn.TabIndex = 62;
             this.clearordertbtn.Text = "Clear";
             this.clearordertbtn.UseVisualStyleBackColor = false;
@@ -392,7 +435,7 @@
             this.exporttomsexcelbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exporttomsexcelbtn.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exporttomsexcelbtn.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.exporttomsexcelbtn.Location = new System.Drawing.Point(519, 325);
+            this.exporttomsexcelbtn.Location = new System.Drawing.Point(519, 350);
             this.exporttomsexcelbtn.Name = "exporttomsexcelbtn";
             this.exporttomsexcelbtn.Size = new System.Drawing.Size(174, 27);
             this.exporttomsexcelbtn.TabIndex = 58;
@@ -408,7 +451,7 @@
             this.productsearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.productsearch.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productsearch.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.productsearch.Location = new System.Drawing.Point(100, 326);
+            this.productsearch.Location = new System.Drawing.Point(100, 352);
             this.productsearch.Name = "productsearch";
             this.productsearch.Size = new System.Drawing.Size(232, 25);
             this.productsearch.TabIndex = 55;
@@ -425,7 +468,7 @@
             this.deleteorderbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteorderbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteorderbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deleteorderbtn.Location = new System.Drawing.Point(456, 140);
+            this.deleteorderbtn.Location = new System.Drawing.Point(456, 180);
             this.deleteorderbtn.Name = "deleteorderbtn";
             this.deleteorderbtn.Size = new System.Drawing.Size(204, 34);
             this.deleteorderbtn.TabIndex = 10;
@@ -443,7 +486,7 @@
             this.updateorderbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateorderbtn.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateorderbtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.updateorderbtn.Location = new System.Drawing.Point(456, 99);
+            this.updateorderbtn.Location = new System.Drawing.Point(456, 136);
             this.updateorderbtn.Name = "updateorderbtn";
             this.updateorderbtn.Size = new System.Drawing.Size(204, 34);
             this.updateorderbtn.TabIndex = 9;
@@ -462,17 +505,6 @@
             this.orderstatusinput.Size = new System.Drawing.Size(199, 25);
             this.orderstatusinput.TabIndex = 8;
             // 
-            // orderidinput
-            // 
-            this.orderidinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.orderidinput.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orderidinput.Location = new System.Drawing.Point(234, 141);
-            this.orderidinput.Name = "orderidinput";
-            this.orderidinput.Size = new System.Drawing.Size(199, 25);
-            this.orderidinput.TabIndex = 7;
-            // 
             // customeridinput
             // 
             this.customeridinput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -483,20 +515,6 @@
             this.customeridinput.Name = "customeridinput";
             this.customeridinput.Size = new System.Drawing.Size(199, 25);
             this.customeridinput.TabIndex = 6;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tw Cen MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Salmon;
-            this.label6.Location = new System.Drawing.Point(152, 144);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 19);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Order Id";
             // 
             // label5
             // 
@@ -551,9 +569,9 @@
             this.ordertable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.ordertable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.ordertable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ordertable.Location = new System.Drawing.Point(100, 357);
+            this.ordertable.Location = new System.Drawing.Point(100, 383);
             this.ordertable.Name = "ordertable";
-            this.ordertable.Size = new System.Drawing.Size(593, 242);
+            this.ordertable.Size = new System.Drawing.Size(593, 230);
             this.ordertable.TabIndex = 1;
             this.ordertable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ordertable_CellContentClick);
             // 
@@ -565,7 +583,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tw Cen MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Salmon;
-            this.label2.Location = new System.Drawing.Point(290, 263);
+            this.label2.Location = new System.Drawing.Point(336, 291);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(174, 37);
             this.label2.TabIndex = 0;
@@ -824,11 +842,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox customeridinput;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button updateorderbtn;
         private System.Windows.Forms.TextBox orderstatusinput;
-        private System.Windows.Forms.TextBox orderidinput;
         private System.Windows.Forms.Button deleteorderbtn;
         private System.Windows.Forms.DataGridView paymenttableview;
         private System.Windows.Forms.Label label7;
@@ -849,5 +865,8 @@
         private System.Windows.Forms.Button clearordertbtn;
         private System.Windows.Forms.Button clearpaymentbtn;
         private System.Windows.Forms.Button exporttomsexcelpayment;
+        private System.Windows.Forms.Button addordersbtn;
+        private System.Windows.Forms.TextBox totalamountinput;
+        private System.Windows.Forms.Label label6;
     }
 }

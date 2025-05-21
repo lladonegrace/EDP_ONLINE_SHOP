@@ -583,6 +583,13 @@ namespace EDP_ONLINE_SHOP
                 MessageBox.Show("Error loading selected row: " + ex.Message);
             }
         }
+
+        private void logoutbtn_Click(object sender, EventArgs e)
+        {
+            Logincs login = new Logincs();
+            login.Show();
+            this.Hide();
+        }
     }
 }
 
